@@ -1,0 +1,40 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== dropmarker.css =================================================
+  == Styles for dropmarker.
+  ======================================================================= */
+
+/* いつからこんな CSS ができたのか知らないけど、なんか必要性があったんだろうか?
+   かえってややこしくなっている気がする。
+   button.css/button[type="menu-button"]
+   menulist.css/.menulist-dropmarker
+   toolbarbutton.css/.toolbarbutton-menu-dropmarker
+   toolbarbutton.css/.toolbarbutton-menubutton-dropmarker
+   ではここで宣言される値を上書きする必要がある。*/
+
+dropmarker {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+/*	border: 1px outset ThreeDShadow;
+	background-color: -moz-Dialog;*/
+	list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+	-moz-image-region: auto;
+	width: 16px;
+	height: 16px;
+}
+
+dropmarker:hover:active:not([disabled]) {
+/*	border: 1px inset ThreeDShadow;*/
+}
+
+dropmarker[disabled="true"] {
+/*	border: 1px solid ThreeDLightShadow;*/
+	list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}

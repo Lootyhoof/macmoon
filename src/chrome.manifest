@@ -1,0 +1,4 @@
+skin	global			macmoon	chrome/global/
+skin	browser			macmoon	chrome/browser/
+skin	mozapps			macmoon	chrome/mozapps/
+skin	communicator	macmoon	chrome/communicator/

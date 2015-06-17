@@ -1,0 +1,22 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== multirowBookmarksToolbar.css ===================================
+  == "Multirow Bookmarks Toolbar 4.9" by Alice0775
+  == http://space.geocities.yahoo.co.jp/gl/alice0775
+  == https://addons.mozilla.org/en-US/firefox/addon/6937/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#personal-bookmarks[multi] #bookmarksBarContent toolbarbutton.bookmark-item {
+	padding: 0 7px !important;
+	min-height:16px;
+	/* Fx3.6 で menu とそうでないのとで位置が合わない(Tahoma, Arial)。Lucida Grande は問題ないみたい。
+	   アイコンを表示させるか、フォントサイズを12pxにすることで解消するんだけど... */
+}
+
+#personal-bookmarks[multi] toolbarbutton.bookmark-item[dragover][open] {
+	-moz-appearance: none !important;
+}

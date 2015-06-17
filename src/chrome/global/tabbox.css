@@ -1,0 +1,164 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   SmartBright (hb.smartbright@gmail.com) <macfox_nostalgia>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== tabbox.css =================================================
+  == Styles used by XUL tab-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tabs ::::: */
+
+.tabs-left {
+	-moz-box-flex: 1;
+	background: url("chrome://global/skin/tabbox/tabs-bottom-left.png") no-repeat bottom left;
+}
+
+.tabs-right {
+	-moz-box-flex: 1;
+	background: url("chrome://global/skin/tabbox/tabs-bottom-right.png") no-repeat bottom right;
+}
+
+/* ::::: tab ::::: */
+
+tab {
+	-moz-box-align: stretch;
+	margin: 0 -1px;
+	height: 28px;
+}
+
+tab > .tab-img-left {
+	background: url("chrome://global/skin/tabbox/tab-left.png") no-repeat bottom left;
+	width: 7px;
+}
+
+tab > .tab-img-middle {
+	background: url("chrome://global/skin/tabbox/tab-mid.png") repeat-x bottom left;
+}
+
+tab > .tab-img-right {
+	background: url("chrome://global/skin/tabbox/tab-right.png") no-repeat bottom right;
+	width: 7px;
+}
+
+tab[selected="true"] > .tab-img-left {
+	background: url("chrome://global/skin/tabbox/tab-left-active.png") no-repeat bottom left;
+}
+
+tab[selected="true"] > .tab-img-middle {
+	background: url("chrome://global/skin/tabbox/tab-mid-active.png") repeat-x bottom left;
+}
+
+tab[selected="true"] > .tab-img-right {
+	background: url("chrome://global/skin/tabbox/tab-right-active.png") no-repeat bottom right;
+}
+
+/* global.css/label の値が優先されるので、margin を指定する場合は注意!
+   左右の padding は macfoxII では 5px となっていいるが、各種 extension の設定ダイアログなどで
+   収まりきらないものが続出するので、むしろ無い方がよい、と思う。 */
+.tab-text {
+	padding: 0 1px 5px;
+}
+
+/* ::::: tabpanels ::::: */
+
+tabpanels {
+	padding: 8px;
+	border-right: 4px solid;
+	-moz-border-right-colors: #ebebeb #e3e3e3 #d4d4d4 #b2b2b2;
+	border-bottom: 5px solid;
+	-moz-border-bottom-colors: #ebebeb #e3e3e3 #d4d4d4 #bcbcbc #9a9a9a;
+	border-left: 4px solid;
+	-moz-border-left-colors: #ebebeb #e3e3e3 #d4d4d4 #b2b2b2;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	background: #eee url("chrome://global/skin/tabbox/tabs-bottom-shadow.png") repeat-x top left;
+}
+
+/* ::::: tab-bottom ::::::::::
+   :: Tabs that are attached to the bottom of a panel, but not necessarily a tabpanels.
+   ::::: */
+
+/* 確認できません! どこで見れるんだろう?
+   イメージを修正していないので、表示は崩れるはず。 */
+
+.tab-bottom {
+	-moz-box-align: stretch;
+	margin-bottom: 2px;
+	padding: 0;
+	height: 26px;
+}
+
+.tab-bottom .tab-text {
+	padding: 0 5px;
+}
+
+.tab-bottom > .tab-img-left {
+	background: url("chrome://global/skin/tabbox/bot-tab-left.png") no-repeat bottom left;
+	width: 5px;
+}
+
+.tab-bottom > .tab-img-middle {
+	background: url("chrome://global/skin/tabbox/bot-tab-mid.png") repeat-x bottom left;
+}
+
+.tab-bottom > .tab-img-right {
+	background: url("chrome://global/skin/tabbox/bot-tab-right.png") no-repeat bottom right;
+	width: 5px;
+}
+
+.tab-bottom[selected="true"] > .tab-img-left {
+	background: url("chrome://global/skin/tabbox/bot-tab-left-active.png") no-repeat bottom left;
+}
+
+.tab-bottom[selected="true"] > .tab-img-middle {
+	background: url("chrome://global/skin/tabbox/bot-tab-mid-active.png") repeat-x bottom left;
+}
+
+.tab-bottom[selected="true"] > .tab-img-right {
+	background: url("chrome://global/skin/tabbox/bot-tab-right-active.png") no-repeat bottom right;
+}
+
+/* ::::: tabs-bottom ::::: */
+
+/*.tabs-bottom > .tabs-left,
+.tabs-bottom > .tabs-right {
+}*/

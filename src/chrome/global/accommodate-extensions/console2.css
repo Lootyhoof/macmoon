@@ -1,0 +1,44 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== console2.css ===================================================
+  == "Console2 0.6.1" by zeniko
+  == http://console2.mozdev.org/index.html
+  == https://addons.mozilla.org/en-US/firefox/addon/1815/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#Console2Window #ToolbarMode toolbarbutton,
+#Console2Window #ToolbarExt toolbarbutton {
+	margin: 0 1px;
+}
+
+#Console2Window #TextboxFilter {
+	margin-top: 3px !important;
+	margin-bottom: 3px !important;
+	-moz-margin-end: 4px !important;
+	-moz-padding-start: 6px;
+	-moz-border-radius: 50%;
+}
+
+#Console2Window #TextboxFilter .textbox-search-icons {
+	margin-top: 1px;
+}
+
+#Console2Window #TextboxEval {
+	margin: 3px 4px !important;
+}
+
+#Console2Window #ButtonEval {
+	-moz-margin-end: 1px !important;
+}
+
+#Console2Window #ConsoleBox {
+	margin: 0;
+}
+
+#Console2Window .console-row {
+	padding: 4px;
+}

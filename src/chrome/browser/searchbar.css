@@ -1,0 +1,113 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== searchbar.css ==================================================
+  == Styles for Search Bar.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::::::: searchbar-textbox :::::::::: */
+
+.searchbar-textbox {
+	border-radius: 9.5pt;
+	width: 6em;
+	min-width: 6em;
+	min-height: 23px;
+}
+
+/* 必要かどうかはともかくとして、urlbar と同じ条件に */
+.searchbar-textbox > .autocomplete-textbox-container {
+	-moz-box-align: stretch;
+}
+
+.searchbar-textbox .textbox-input-box {
+	margin: 0;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+/* --- for Personas --- */
+
+#main-window:-moz-lwtheme .searchbar-textbox {
+	background-color: rgba(255, 255, 255, .75);
+}
+
+/* :::::::::: searchbar-engine-button :::::::::: */
+
+.searchbar-engine-button {
+	-moz-box-align: center;
+	margin: 0;
+	padding: 0;				   
+	background: none;
+	min-width: 0;
+	height: 16px;
+	border: none;
+	box-shadow: none;
+}
+
+.searchbar-engine-button > .button-box {
+	padding: 0;
+	-moz-padding-end: 3px;
+	background: none;
+}
+
+.searchbar-engine-image {
+	-moz-margin-start: 7px;
+	list-style-image: url("chrome://browser/skin/places/bookmark-item.png");
+	-moz-image-region: rect(0, 16px, 16px, 0);
+	width: 16px;
+	height: 16px;
+}
+
+.searchbar-dropmarker-image {
+	margin-top: 1px;
+	-moz-margin-start: 2px;
+	list-style-image: url("chrome://browser/skin/searchbar/search-arrow-dn.png");
+	width: 7px;
+	height: 7px;
+}
+
+.searchbar-engine-button[addengines="true"] .searchbar-dropmarker-image {
+	list-style-image: url("chrome://browser/skin/searchbar/search-arrow-add-engines.gif");
+}
+
+/* :::::::::: search-go-button :::::::::: */
+
+.search-go-container {
+	-moz-box-align: center;
+}
+
+.search-go-button {
+	padding: 0 3px 1px;
+	list-style-image: url("chrome://browser/skin/searchbar/search.png");
+	-moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.search-go-button:hover {
+	-moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.search-go-button:hover:active {
+	-moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+.search-go-button[disabled="true"] {
+	-moz-image-region: rect(0, 64px, 16px, 48px);
+}
+
+.searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
+	font-weight: bold;
+}
+
+/* :::::::::: autocomplete popup :::::::::: */
+
+.autocomplete-result-popupset treechildren::-moz-tree-row(even) {
+	background-color: transparent;
+}

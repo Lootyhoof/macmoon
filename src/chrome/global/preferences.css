@@ -1,0 +1,117 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the Preferences UI System.
+ *
+ * The Initial Developer of the Original Code is
+ * Ben Goodger.
+ * Portions created by the Initial Developer are Copyright (C) 2005
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Ben Goodger (ben@mozilla.org)
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== preferences.css ================================================
+  == Styles used by the XUL prefwindow element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: dialog ::::: */
+
+prefwindow {
+	padding: 0;
+}
+
+prefpane {
+	padding: 8px 8px 10px;
+}
+
+prefwindow[type="child"] {
+	padding: 8px 8px 10px;
+}
+
+prefwindow[type="child"] > prefpane {
+	padding: 0;
+}
+
+.prefWindow-dlgbuttons {
+	padding-bottom: 10px;
+	-moz-padding-start: 8px;
+	-moz-padding-end: 8px;
+}
+
+prefwindow[type="child"] .prefWindow-dlgbuttons {
+	padding: 0;
+}
+
+/*prefwindow:not([type="child"]) .prefWindow-dlgbuttons > .dialog-button {
+	margin-top: 0;
+}*/
+
+/* ::::: Pane Selector ::::: */
+
+.paneSelector {
+	margin: 0;
+	-moz-padding-start: 10px;
+	border-bottom: 1px solid #a3a3a3;
+	background: #fff url("chrome://global/skin/basic/selector-bkg.png") repeat;
+	color: #000;
+}
+
+radio[pane] {
+	-moz-appearance: none;
+	margin: 0 1px;
+	padding: 5px 3px 1px;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	background-color: transparent;
+	min-width: 4.5em;
+}
+
+/* アドオンの設定ダイアログで必要になるので、globalでは背景あり。ブラウザのオプションダイアログ
+   ではアイコンの明暗で対応するので、"browser/preferences/preferences.css" で背景なしに修正。*/
+radio[pane]:hover {
+	border-right: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	background-color: #ededed;
+}
+
+radio[pane][selected="true"] {
+	border-right: 1px solid #b9b9b9;
+	border-left: 1px solid #b9b9b9;
+	background-color: #ddd;
+	color: #000;
+}
+
+.paneButtonIcon {
+	width: 32px;
+	height: 32px;
+}

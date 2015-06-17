@@ -1,0 +1,33 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== firefoxSync.css =====================================================
+  == "Firefox Sync 1.3" by Mozilla
+  == http://www.mozilla.com/en-US/firefox/sync/
+  == https://addons.mozilla.org/en-US/firefox/addon/10868/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* これ、css では変えられない? */
+/*#BrowserPreferences radio[pane="paneWeaveServices"]:hover {
+}*/
+
+wizard[windowtype="Weave:AccountSetup"] .wizard-header-icon {
+	-moz-margin-end: 5px;
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.accountChoiceButton,
+.mergeChoiceButton {
+	margin: 1px 15px 2px;
+	background-image: none;
+}
+
+.accountChoiceButton > .button-box,
+.mergeChoiceButton > .button-box {
+	background-image: none;
+	min-height: 5em;
+}

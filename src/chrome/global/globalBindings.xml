@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<bindings id="globalBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="radio"
+           extends="chrome://global/content/bindings/radio.xml#radio">
+    <content>
+      <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
+        <xul:hbox class="radio-check-box2" flex="1">
+          <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
+        </xul:hbox>
+      </xul:hbox>
+      <xul:hbox class="radio-label-box" align="center" flex="1">
+        <xul:image class="radio-icon" xbl:inherits="src"/>
+        <xul:label class="radio-label" xbl:inherits="xbl:text=label,accesskey,crop" flex="1"/>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="radio-with-spacing"
+           extends="chrome://global/skin/globalBindings.xml#radio">
+    <content>
+      <xul:hbox class="radio-spacer-box">
+        <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
+          <xul:hbox class="radio-check-box2" flex="1">
+            <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
+          </xul:hbox>
+        </xul:hbox>
+      </xul:hbox>
+      <xul:hbox class="radio-label-center-box" flex="1">
+        <xul:hbox class="radio-label-box" flex="1">
+          <xul:image class="radio-icon" xbl:inherits="src"/>
+          <xul:label class="radio-label" xbl:inherits="xbl:text=label,accesskey,crop" flex="1"/>
+        </xul:hbox>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="toolbarpaletteitem-spacer"
+           extends="chrome://global/content/bindings/toolbar.xml#toolbarpaletteitem">
+    <content>
+      <xul:spacer class="spacer-left"/>
+      <children/>
+      <xul:spacer class="spacer-right"/>
+    </content>
+  </binding>
+
+  <binding id="menulist-compact" display="xul:menu" 
+           extends="chrome://global/content/bindings/menulist.xml#menulist">
+    <content sizetopopup="false">
+      <xul:hbox class="menulist-label-box" flex="1">
+        <xul:image class="menulist-icon" xbl:inherits="src"/>
+        <xul:label class="menulist-label" xbl:inherits="value=label,crop,accesskey" crop="right" flex="1"/>
+      </xul:hbox>
+      <children includes="menupopup"/>
+    </content>
+  </binding>
+
+  <binding id="scrollthumb">
+    <content>
+      <xul:thumbinner flex="1"/>
+    </content>
+  </binding>
+
+  <binding id="tab"
+           extends="chrome://global/content/bindings/tabbox.xml#tab">
+    <content>
+      <xul:hbox class="tab-img-left" xbl:inherits="selected,hover"/>
+      <xul:hbox class="tab-img-middle" xbl:inherits="selected,hover" align="center" flex="1">
+        <xul:image class="tab-icon" xbl:inherits="validate,src=image"/>
+        <xul:label class="tab-text" xbl:inherits="value=label,accesskey,crop,disabled" flex="1"/>
+      </xul:hbox>
+      <xul:hbox class="tab-img-right" xbl:inherits="selected,hover"/>
+    </content>
+  </binding>
+
+  <binding id="menu-button" display="xul:menu" 
+           extends="chrome://global/content/bindings/toolbarbutton.xml#menu-button">
+    <content>
+      <children includes="observes|template|menupopup|tooltip"/>
+      <xul:toolbarbutton class="box-inherit toolbarbutton-menubutton-button"
+                         anonid="button" flex="1" allowevents="true"
+                         xbl:inherits="disabled,crop,image,label,accesskey,command,
+                                       align,dir,pack,orient,toolbarmode,buttonstyle"/>
+      <xul:dropmarker type="menu-button" class="toolbarbutton-menubutton-dropmarker"
+                      xbl:inherits="align,dir,pack,orient,disabled,toolbarmode,buttonstyle,buttonover"/>
+    </content>
+  </binding>
+
+</bindings>

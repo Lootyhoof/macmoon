@@ -1,0 +1,401 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== tree.css =======================================================
+  == Styles used by the XUL outline element.
+  ======================================================================= */
+
+/* tree[seltype="cell"], tree[seltype="text"] というのはどこにある? 確認できないので、
+   ルールを指定したくてもできない。とりあえずはいい加減に指定しておく。 */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tree ::::: */
+
+tree {
+	margin: 0 4px;
+	border: 1px solid #a3a3a3;
+  	background-color: #fff;
+}
+
+groupbox tree {
+	border: 1px solid #c0c0c0;
+}
+
+/* ::::: tree focusring ::::: */
+
+/* .focusring というクラスは見たことがない。macfoxII に従う。*/
+
+.focusring > .tree-stack > .tree-rows > .tree-bodybox {
+	border: 1px solid transparent;  
+}
+
+.focusring:focus > .tree-stack > .tree-rows > .tree-bodybox {
+	border: 1px solid -moz-mac-focusring;
+}
+
+/* ::::: tree rows ::::: */
+
+treechildren::-moz-tree-row {
+	border: 1px solid transparent;
+	min-height: 18px;
+	height: 1.3em;
+}
+
+treechildren::-moz-tree-row(even) {
+/*	background-color: #f0f0f0;*/
+	background-color: rgba(0, 0, 0, .06); /* drag and drop の border がきちんと見えるので、こちらの方がよい。 */
+}
+
+treechildren::-moz-tree-row(selected),
+treechildren::-moz-tree-row(current, focus) {
+	background: #dcdcdc url("chrome://global/skin/tree/tree-row-selected-bottom.png") repeat-x bottom left;
+}
+
+treechildren::-moz-tree-row(selected, focus),
+treechildren::-moz-tree-row(selected, current, focus) {
+	background-color: #3d80df;
+}
+
+/* 未確認 */
+tree[seltype="cell"] > treechildren::-moz-tree-row,
+tree[seltype="text"] > treechildren::-moz-tree-row {
+	border: none;
+	background-color: transparent;
+}
+
+/* ::::: tree cells ::::: */
+
+treechildren::-moz-tree-cell {
+	padding: 0 2px;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text,
+tree[seltype="text"] > treechildren::-moz-tree-cell-text,
+treechildren::-moz-tree-cell-text {
+	color: inherit;
+}
+
+treechildren::-moz-tree-cell-text(selected) {
+	color: #000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell {
+	border: 1px solid transparent;
+	padding: 0px 1px 0px 1px;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text {
+	border: 1px solid transparent;
+	padding: 0px 1px 1px 1px;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected) {
+	background-color: -moz-cellhighlight;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected) {
+	color: -moz-cellhighlighttext;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected) {
+	background-color: -moz-cellhighlight;
+	color: -moz-cellhighlighttext;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus) {
+	color: #fff;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, focus) {
+	background-color: Highlight;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+	background-color: Highlight;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+	color: HighlightText;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+	color: HighlightText;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, current, focus) {
+	border: 1px dotted #000000;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, current, focus) {
+	border: 1px dotted #000000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, current, focus) {
+	border: 1px dotted #C0C0C0;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, current, focus) {
+	border: 1px dotted #C0C0C0;
+}
+
+/* ::::: lines connecting cells ::::: */
+
+tree[seltype="cell"] > treechildren::-moz-tree-line,
+tree[seltype="text"] > treechildren::-moz-tree-line,
+treechildren::-moz-tree-line {
+/*	border: 1px dotted ThreeDShadow;*/
+	visibility: hidden;
+}
+
+/*tree[seltype="cell"] > treechildren::-moz-tree-line(active, selected, focus),
+treechildren::-moz-tree-line(selected, focus) {
+	border: 1px dotted HighlightText;
+}*/
+
+/* ::::: tree separator ::::: */
+
+/* Firefox2 とは表示のされ方が違うらしく、インデントされる。*/
+treechildren::-moz-tree-separator {
+	margin: 0 2px;
+	border-top: 1px dashed #c7c7c7;
+}
+
+/* ::::: drop feedback ::::: */
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(primary, dropOn),
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(primary, dropOn),
+treechildren::-moz-tree-cell-text(primary, dropOn) {
+	background-color: #4b80d5;
+	color: #fff;
+}
+
+/* これがどれのことなのか、よく分かっていない */
+treechildren::-moz-tree-drop-feedback {
+	background-color: #3d80df;
+	width: 50px;
+	height: 2px;
+	-moz-margin-start: 5px;
+}
+
+/* ::::: tree progress meter ::::: */
+
+/* 確認できないので、2nd Classic から転用。margin, background-color, color は変更してみた。 */
+treechildren::-moz-tree-progressmeter {
+	margin: 3px 2px;
+	border: 2px solid;
+	-moz-border-top-colors: #9d9da1 #e5e7ec;
+	-moz-border-right-colors: #cdcdd1 #e5e7ec;
+	-moz-border-bottom-colors: #d3d3e1 #e5e7ec;
+	-moz-border-left-colors: #cdcdd1 #e5e7ec;
+	background-color: #eee;
+	color: #5f97c9;
+}
+
+/* オリジナルコードではあるけど、イメージは存在しない */
+treechildren::-moz-tree-progressmeter(progressUndetermined) {
+	list-style-image: url("chrome://global/skin/progressmeter/progressmeter-busy.gif");
+}
+
+/* ? */
+treechildren::-moz-tree-cell-text(progressmeter) {
+	margin: 2px 4px;
+}
+
+/* ::::: tree columns ::::: */
+
+treecol,
+treecolpicker {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	padding: 0 4px;
+	border-bottom:1px solid #a0a0a0;
+	-moz-box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
+	background: url("chrome://global/skin/tree/tree-header.png") repeat-x top left;
+	color: #000;
+/*	min-height: 14px;*/
+}
+
+/* 確実にではないけど、ほとんどの場合、これで左ボーダーが消えてくれる。*/
+treecol[ordinal="1"] {
+	-moz-box-shadow: none;
+}
+
+.treecol-image { /* すぐ上の treecolpicker のこと */
+	-moz-padding-start: 2px;
+	-moz-padding-end: 1px;
+}
+
+.treecol-text {
+	margin: 0 !important;
+}
+
+treecol[hideheader="true"] {
+	-moz-appearance: none;
+	border: none;
+	padding: 0;
+	background: none;
+	min-height: 0; /* treecol で min-height を指定しているので、max-height では無く、min-height で対応。 */
+}
+
+/* ..... active state ..... */
+
+treecol:hover:active,
+treecolpicker:hover:active {
+	background: url("chrome://global/skin/tree/tree-header-active.png") repeat-x top left;
+}
+
+/* ::::: column drag and drop styles ::::: */
+
+treecol[dragging="true"] {
+	background-image: url("chrome://global/skin/tree/tree-header.png") !important;
+	-moz-box-shadow:
+/*		inset 1px 0 rgba(0, 0, 0, .25),*/ /* border-left */
+		inset 0 20px rgba(0, 0, 0, .08), /* background-color */
+		inset 0 0 2px rgba(0, 0, 0, .15) !important;
+}
+
+treecol[insertafter="true"] {
+	-moz-box-shadow:
+		inset 1px 0 rgba(0, 0, 0, .25), /* border-left */
+		inset -1px 0 #97bee0; /* border-right insert color */
+}
+
+treecol[ordinal="1"][insertafter="true"] {
+	-moz-box-shadow:
+/*		inset 1px 0 rgba(0, 0, 0, .25),*/ /* clear border-left */
+		inset -1px 0 #97bee0; /* border-right insert color */
+}
+
+treecol[insertbefore="true"] {
+	-moz-box-shadow: inset 1px 0 #97bee0; /* border-left insert color */
+}
+
+treechildren::-moz-tree-column(insertbefore) {
+	border-left: 1px solid #97bee0;
+}
+
+treechildren::-moz-tree-column(insertafter) {
+	border-right: 1px solid #97bee0;
+}
+
+/* ::::: sort direction indicator :::::  */
+
+.treecol-sortdirection {
+	list-style-image: none;
+	width: 7px;
+}
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="ascending"] {
+	list-style-image: url("chrome://global/skin/tree/sort-asc.png");
+}
+
+/*treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="ascending"]:-moz-system-metric(windows-classic) {
+	list-style-image: url("chrome://global/skin/tree/sort-asc-classic.png");
+}*/
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descending"] {
+	list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
+}
+
+/*treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descending"]:-moz-system-metric(windows-classic) {
+	list-style-image: url("chrome://global/skin/tree/sort-dsc-classic.png");
+}*/
+
+/* ::::: column picker :::::  */
+
+.tree-columnpicker-icon {
+	list-style-image: url("chrome://global/skin/tree/columnpicker.gif");
+}
+
+/* ::::: twisty :::::  */
+
+treechildren::-moz-tree-twisty {
+	padding-top: 1px;
+	-moz-padding-start: 2px;
+	-moz-padding-end: 3px;
+	list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+	width: 11px; /* The image's width is 11 pixels */
+}
+
+treechildren::-moz-tree-twisty(open) {
+	list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+	width: 11px; /* The image's width is 11 pixels */
+}
+
+treechildren::-moz-tree-indentation {
+	width: 18px;
+}
+
+/* ::::: gridline style ::::: */ /* 未確認 */
+
+treechildren.gridlines::-moz-tree-cell {
+  border-right: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+treechildren.gridlines::-moz-tree-row {
+  border: none;
+}
+
+/* ::::: editable tree ::::: */
+
+treechildren::-moz-tree-row(selected, editing) {
+	border: none;
+	background-color: transparent;
+}
+
+treechildren::-moz-tree-cell-text(selected, editing) {
+	color: inherit;
+}
+
+/* browser/places/editBookmarkOverlay.css > "popupset > #editBookmarkPanel textbox.tree-input" も参照のこと */
+.tree-input {
+	-moz-appearance: none;
+	margin: 0;
+	-moz-margin-start: -4px;
+	padding: 1px;
+/*	border: 1px solid Highlight;
+	-moz-border-top-colors: Highlight;
+	-moz-border-bottom-colors: Highlight;
+	-moz-border-left-colors: Highlight;
+	-moz-border-right-colors: Highlight;*/
+}

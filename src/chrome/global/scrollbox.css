@@ -1,0 +1,147 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== scrollbox.css ==================================================
+  == Styles for scrollbox.
+  ======================================================================= */
+
+/* いちおう、right to left に対応したつもり。確認していないので、本当にできているかどうかは、わからない。
+   Fx3.5 では [chromedir] を読み込み、":-moz-locale-dir" はエラーとなって無視される。
+   Fx3.6 では [chromedir] は存在しないので、エラーにもならず、適用もされない。":-moz-locale-dir" の
+   ルールセットが適用される。
+   ちなみに、[chromedir] と ":-moz-locale-dir" をまとめて指定すると、Fx3.5 で ":-moz-locale-dir" のエラーで
+   そのルールセットそのものが無視されるため、事実上のバグとなってしまうので注意。*/
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::::::: scroll arrows :::::::::: */
+
+/* ... Horizontal enabled ... */
+
+.autorepeatbutton-up[orient="horizontal"],
+.autorepeatbutton-down[chromedir="rtl"][orient="horizontal"],
+.scrollbutton-up[orient="horizontal"],
+.scrollbutton-down[chromedir="rtl"][orient="horizontal"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-left.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* for Fx3.6 (right to left) */
+.autorepeatbutton-down:-moz-locale-dir(rtl)[orient="horizontal"],
+.scrollbutton-down:-moz-locale-dir(rtl)[orient="horizontal"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-left.png");
+	-moz-image-region: auto;
+}
+
+.autorepeatbutton-down[orient="horizontal"],
+.autorepeatbutton-up[chromedir="rtl"][orient="horizontal"],
+.scrollbutton-down[orient="horizontal"],
+.scrollbutton-up[chromedir="rtl"][orient="horizontal"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-right.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* for Fx3.6 (right to left) */
+.autorepeatbutton-up:-moz-locale-dir(rtl)[orient="horizontal"],
+.scrollbutton-up:-moz-locale-dir(rtl)[orient="horizontal"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-right.png");
+	-moz-image-region: auto;
+}
+
+/* ... Horizontal disabled ... */
+
+.autorepeatbutton-up[orient="horizontal"][disabled="true"],
+.autorepeatbutton-down[chromedir="rtl"][orient="horizontal"][disabled="true"],
+.scrollbutton-up[orient="horizontal"][disabled="true"],
+.scrollbutton-down[chromedir="rtl"][orient="horizontal"][disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-left-dis.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* for Fx3.6 (right to left) */
+.autorepeatbutton-down:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"],
+.scrollbutton-down:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-left-dis.png");
+	-moz-image-region: auto;
+}
+
+.autorepeatbutton-down[orient="horizontal"][disabled="true"],
+.autorepeatbutton-up[chromedir="rtl"][orient="horizontal"][disabled="true"],
+.scrollbutton-down[orient="horizontal"][disabled="true"],
+.scrollbutton-up[chromedir="rtl"][orient="horizontal"][disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-right-dis.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* for Fx3.6 (right to left) */
+.autorepeatbutton-up:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"],
+.scrollbutton-up:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-right-dis.png");
+	-moz-image-region: auto;
+}
+
+/* ... Vertical enabled ... */
+
+.autorepeatbutton-up,
+.scrollbutton-up {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-up.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+.autorepeatbutton-down,
+.scrollbutton-down {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-down.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* ... Vertical disabled ... */
+
+.autorepeatbutton-up[disabled="true"],
+.scrollbutton-up[disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-up-dis.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+.autorepeatbutton-down[disabled="true"],
+.scrollbutton-down[disabled="true"] {
+	list-style-image: url("chrome://global/skin/arrow/scrollbox-arrow-down-dis.png");
+	-moz-image-region: auto; /* cut off inheritance */
+}
+
+/* :::::::::: scroll button :::::::::: */
+
+autorepeatbutton,
+.scrollbutton-up,
+.scrollbutton-down {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	margin: 1px;
+}
+
+autorepeatbutton[orient="vertical"] {
+	margin: 0 1px;
+}
+
+autorepeatbutton {
+	padding: 1px;
+	border: 1px solid transparent;
+}
+
+autorepeatbutton:not([disabled="true"]):hover {
+	border: 1px solid #c0c0c0;
+}
+
+autorepeatbutton:not([disabled="true"]):hover:active {
+	border: 1px solid #a3a3a3;
+}
+
+.scrollbutton-up > .toolbarbutton-text,
+.scrollbutton-down > .toolbarbutton-text {
+	display: none;
+}

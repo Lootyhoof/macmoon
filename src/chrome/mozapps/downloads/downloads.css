@@ -1,0 +1,95 @@
+#downloadView {
+	-moz-appearance: none !important;
+	margin: 0;
+	border-bottom: 1px solid #a3a3a3;
+}
+
+#clearListButton {
+	margin: 5px;
+}
+
+/* :::::::::: Download Items :::::::::: */
+
+richlistitem[type="download"] {
+	padding: 4px 8px 4px 4px;
+	min-height: 46px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+/*richlistitem[type="download"][selected="true"] {
+	background-image: url(chrome://mozapps/skin/extensions/itemEnabledFader.png);
+}*/
+
+richlistitem[type="download"] .name {
+	font-size: larger;
+}
+
+richlistitem[type="download"] .dateTime {
+	font-size: smaller;
+}
+
+.blockedIcon {
+	list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+
+/* prevent flickering when changing states */
+.downloadTypeIcon {
+	min-height: 32px;
+	min-width: 32px;
+}
+
+#downloadView progressmeter {
+	margin-top: 2px;
+	margin-bottom: 3px;
+}
+
+/**
+ * Images for buttons in the interface
+ */
+
+richlistitem[type="download"] button {
+  list-style-image: url(chrome://mozapps/skin/downloads/buttons.png);
+}
+.cancel {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+.cancel:hover {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.cancel:hover:active {
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+
+.pause {
+  -moz-image-region: rect(48px, 16px, 64px, 0px);
+}
+.pause:hover {
+  -moz-image-region: rect(48px, 32px, 64px, 16px);
+}
+.pause:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(48px, 48px, 64px, 32px);
+}
+.pause[disabled="true"] {
+  -moz-image-region: rect(48px, 16px, 64px, 0px);
+}
+
+.resume {
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+.resume:hover {
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+.resume:hover:active {
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+
+.retry {
+  -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+.retry:hover {
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+.retry:hover:active {
+  -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+

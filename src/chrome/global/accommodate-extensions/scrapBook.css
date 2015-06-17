@@ -1,0 +1,146 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== scrapBook.css ==================================================
+  == "ScrapBook 1.3.7" by Gomita
+  == http://amb.vis.ne.jp/mozilla/scrapbook/
+  == https://addons.mozilla.org/en-US/firefox/addon/427/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::::::: sidebar :::::::::: */
+
+#sbListSplitter,
+#sbNoteSplitter {
+	border-top: 1px solid #a3a3a3;
+	border-bottom: 1px solid #a3a3a3;
+}
+
+#sbSearchToolbar,
+#sbMainToolbar {
+	border-bottom: 1px solid #a3a3a3;
+}
+
+hbox.sb-header {
+	border: none;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.sb-header toolbarbutton {
+	border: 1px solid transparent;
+	-moz-border-radius: 2px;
+}
+
+.sb-header toolbarbutton:hover {
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: rgba(0, 0, 0, .05);
+}
+
+.sb-header toolbarbutton:hover:active,
+.sb-header toolbarbutton[open="true"],
+.sb-header toolbarbutton[checked="true"] {
+	border: 1px solid rgba(0, 0, 0, .12);
+	background-color: rgba(0, 0, 0, .08);
+}
+
+#sbList {
+	margin: 0;
+}
+
+#sbListHeader > toolbarbutton {
+	border: 1px solid transparent;
+	-moz-border-radius: 2px;
+}
+
+#sbListHeader > toolbarbutton:hover {
+	border: 1px solid #c9c9c9;
+}
+
+#sbListHeader > toolbarbutton:hover:active,
+#sbListHeader > toolbarbutton[open="true"] {
+	border: 1px solid #b9b9b9;
+	background-color: #ddd;
+}
+
+/* :::::::::: toolbox :::::::::: */
+
+#ScrapBookEditor {
+	border-bottom: none;
+}
+
+/* ... toolbarbutton ... */
+
+#ScrapBookEditor toolbarbutton {
+	border: 1px solid transparent;
+	-moz-border-radius: 2px;
+}
+#ScrapBookEditor toolbarbutton:hover:not([disabled="true"]) {
+	border-color: #c9c9c9;
+	background-color: #ededed;
+}
+#ScrapBookEditor toolbarbutton:hover:active:not([disabled="true"]),
+#ScrapBookEditor toolbarbutton[open="true"]:not([disabled="true"]),
+#ScrapBookEditor toolbarbutton[checked="true"]:not([disabled="true"]) {
+	border-color: #b9b9b9;
+	background-color: #ddd;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
+	-moz-border-radius: 2px 0 0 2px;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"]:hover:not([disabled="true"]) > .toolbarbutton-menubutton-button {
+	border-color: #c9c9c9;
+	background-color: #ededed;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]) > .toolbarbutton-menubutton-button {
+	border-color: #b9b9b9;
+	background-color: #ddd;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-dropmarker {
+	border-top: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	-moz-border-radius: 0 2px 2px 0;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"]:hover:not([open]):not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker[buttonover] {
+	border-color: #c9c9c9;
+	background-color: transparent;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"]:hover:not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker {
+	border-color: #c9c9c9;
+	background-color: #ededed;
+}
+#ScrapBookEditor toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker {
+	border-color: #b9b9b9;
+	background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

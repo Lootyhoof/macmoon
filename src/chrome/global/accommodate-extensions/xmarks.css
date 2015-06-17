@@ -1,0 +1,15 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== xmarks.css =====================================================
+  == "Xmarks 3.6.14" by Todd Agulnick
+  == http://www.xmarks.com/
+  == https://addons.mozilla.org/en-US/firefox/addon/2410/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#foxmarks-settings .paneSelector radio {
+	border: none !important;
+}

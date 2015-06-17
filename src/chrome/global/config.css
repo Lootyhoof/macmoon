@@ -1,0 +1,82 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== config.css =====================================================
+  == Styles for about:config warning page.
+  ======================================================================= */
+
+@import url("chrome://global/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#warningScreen {
+	background: #fff url("chrome://global/skin/basic/bkg.png") repeat;
+/*	font: 12px "Lucida Grande", Tahoma, Arial, sans-serif;*/
+	font-size: 12px;
+}
+
+#warningBox {
+	margin-right: 1em;
+	margin-left: 1em;
+	padding: 3em;
+	-moz-padding-start: 30px;
+	-moz-border-radius: 10px;
+	-moz-box-shadow:
+		inset 0 0 1px rgba(0, 0, 0, .2),
+		inset 0 1px 2px rgba(0, 0, 0, .35);
+	background-color: rgba(0, 0, 0, .02);
+	color: #000;
+}
+
+#warningInnerBox {
+	max-width: 50em;
+}
+
+#warningTitle {
+	margin: 0 0 .6em 0;
+	padding-bottom: 1.5em;
+	border-bottom: 2px solid;
+	-moz-border-bottom-colors: #fff #ccc;
+	font-size: 160%;
+}
+
+#warningText {
+	margin-left: 0;
+	font-size: 110%;
+}
+
+#warningButton {
+	margin-top: 0.6em;
+}
+
+#showWarningNextTime {
+	margin-top: 0.6em;
+}
+
+#exclam {
+	-moz-margin-end: 3em;
+	list-style-image: url("chrome://global/skin/icons/warning-large.png");
+}
+
+#configTreeBody::-moz-tree-cell-text(user) {
+	font-weight: bold;
+}
+
+#configTreeBody::-moz-tree-cell-text(locked) {
+	font-style: italic;
+}
+
+#configTree {  
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#filterRow {
+	margin-top: 5px;
+}

@@ -1,0 +1,14 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== dblClicker.css =================================================
+  == "DblClicker 1.5" by Yochai
+  == https://addons.mozilla.org/en-US/firefox/addon/13902
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#dblclicker-preferences .dblclicker-grp {
+	border: none; 
+}

@@ -1,0 +1,147 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== textbox.css ==================================================
+  == Styles used by the XUL textbox element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: textbox ::::: */
+
+textbox {
+  -moz-appearance: none;
+  cursor: text;
+  margin: 3px 4px;
+  min-height: 20px;
+  padding: 1px 2px 1px 2px ;
+  background-color: -moz-Field;
+  color: -moz-FieldText;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: #7c7c7c #c3c3c3 #ddd;
+}
+
+textbox[empty="true"] {
+  color: GrayText;
+}
+
+html|*.textbox-input, 
+html|*.textbox-textarea {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	background-color: inherit;
+	color: inherit;
+	font: inherit;
+}
+
+/* ..... focused state ..... */
+
+textbox[focused="true"]:not([readonly="true"]):not([type="number"]) {
+  box-shadow: 0 0 2px 1px #6483f8, 0 0 1px 1px #6483f8;
+  -moz-border-top-colors: #C0C0C0 #E8E8E8 -moz-Field;
+  -moz-border-bottom-colors: #E0E0E0 #FEFEFE -moz-Field;
+  -moz-border-right-colors: #E0E0E0 #FEFEFE -moz-Field;
+  -moz-border-left-colors: #E0E0E0 #FEFEFE -moz-Field;
+}
+
+findbar textbox[focused="true"] {
+  outline: none;
+}
+
+/* ..... readonly state ..... */
+
+textbox[readonly="true"] {
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+}
+
+/* ..... disabled state ..... */
+
+textbox[disabled="true"] {
+  cursor: default;
+  border-color: ThreeDShadow;
+  background-color: -moz-Dialog;
+  color: GrayText;
+} 
+
+/* ::::: plain textbox ::::: */
+
+textbox.plain {
+  -moz-appearance: none !important;
+  background-color: transparent;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+
+/* ::::: search textbox ::::: */
+
+textbox[type=search] {
+  border-radius: 9.5pt;
+  border: 1px solid #909090;
+  padding : 2px 4px;
+  -moz-padding-start: 9px;
+}
+
+textbox[type=search][focused="true"]  {
+  background-color: white;
+}
+
+.textbox-search-icon {
+	list-style-image: url("chrome://global/skin/icons/textbox-search.png");
+	-moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+/*.textbox-search-icon[chromedir="rtl"] {
+	list-style-image: url("chrome://global/skin/icons/Search-glass-rtl.png");
+}*/
+
+.textbox-search-clear {
+	list-style-image: url("chrome://global/skin/icons/textbox-search-clear.png");
+	-moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.textbox-search-clear:not([disabled]):hover ,
+.textbox-search-icon[searchbutton]:not([disabled]):hover {
+	-moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.textbox-search-clear:not([disabled]):hover:active ,
+.textbox-search-icon[searchbutton]:not([disabled]):hover:active {
+	-moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+.textbox-search-icon[searchbutton]:not([disabled]) {
+	cursor: pointer;
+}
+
+.textbox-search-clear:not([disabled]) {
+	cursor: default;
+}
+
+/* ::::: textboxes inside toolbarpaletteitems ::::: */
+
+toolbarpaletteitem > toolbaritem > textbox > .textbox-input-box > html|*.textbox-input {
+  visibility: hidden;
+}
+
+textbox html|*.textbox-input::-moz-placeholder {
+  font-style: italic;
+  opacity: 1; 
+  color: grey;
+}
+
+textbox html|*.textbox-input:-moz-placeholder {     	/* à supprimer qd on sera à TB24 */
+  font-style: italic;
+  opacity: 1; 
+  color: grey;
+}
+

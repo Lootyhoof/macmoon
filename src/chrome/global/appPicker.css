@@ -1,0 +1,54 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== appPicker.css =============================================================
+  == Styles for Select Helper Application Dialog.
+  == オプション > プログラム > 他のプログラムを選択 > プログラムの選択 ダイアログ
+  ================================================================================== */
+
+#app-picker {
+    width:320px !important;
+    max-width:320px !important;
+}
+
+#content-description {
+    font-weight:bold;
+}
+
+#suggested-filename {
+    font-weight:normal;
+}
+
+#file-info {
+}
+
+#app-picker-list {
+	border: 1px solid #a3a3a3;
+    height:225px;
+    min-height:225px;
+}
+
+#app-picker-item {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#app-picker-item-image {
+	-moz-margin-start: 5px;
+}
+
+#app-picker-item-cell {
+    font-weight:normal; 
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#browse-button {
+    margin-top:10px;
+}

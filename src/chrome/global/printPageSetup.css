@@ -1,0 +1,20 @@
+/* ***** NO LICENSE mentioned on the original code *****
+ *
+ * Contributor(s):
+ *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
+ *
+ * ***************************************************** */
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== printPageSetup.css =============================================
+  == Styles for Print Page Setup Dialog.
+  ======================================================================= */
+
+.portrait-page {
+	list-style-image: url("chrome://global/skin/icons/Portrait.png");
+}
+
+.landscape-page {
+	list-style-image: url("chrome://global/skin/icons/Landscape.png");
+}

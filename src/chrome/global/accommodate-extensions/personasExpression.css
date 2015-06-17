@@ -1,0 +1,26 @@
+
+/* <<<<< macfox_nostalgia >>>>> */
+
+/* ===== personasExpression.css =========================================
+  == "Personas Expression 1.1.0" by Eddie
+  == https://addons.mozilla.org/ja/firefox/addon/157767/
+  == Styles accommodate the Extension to macfox NOSTALGIA theme.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#pex-sidebar > #contentsarea hbox.valuerow {
+	-moz-box-align: center;
+}
+
+page#pex-sidebar > #contentsarea hbox.valuerow > menulist {
+	margin-bottom: 0 !important;
+}
+
+page#pex-sidebar > #contentsarea hbox.valuerow > colorpicker {
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+	border-width: 0 !important;
+	width: 50px !important;
+	height: 25px !important;
+}
