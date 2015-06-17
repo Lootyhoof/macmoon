@@ -1928,6 +1928,7 @@ tabpanels {
 	margin-top: 1px;
 	width: 16px;
 	height: 16px;
+	display: inline !important;
 	list-style-image: url("chrome://browser/skin/tabs/small-globe-gray.png");
 	opacity: .5;
 }
@@ -2015,10 +2016,6 @@ tabpanels {
 .tab-icon-image[pinned] {
   -moz-margin-start: 5px;
   -moz-margin-end: 5px;
-}
-
-.tabbrowser-tab[pinned] .tab-icon-image {
-  display: inline !important;
 }
 
 .tabbrowser-tab[pinned] .tab-text,
