@@ -1834,7 +1834,8 @@ tabpanels {
 }
 
 .tabbrowser-tab[selected="true"] > .tab-image-middle,
-.tabbrowser-tab[selected="true"] > .tab-close-button {
+.tabbrowser-tab[selected="true"] > .tab-close-button,
+.tabbrowser-tab[selected="true"] > * > .tab-content {
 	background: url("chrome://browser/skin/tabs/activetab-middle.png") repeat-x top center;
 }
 
