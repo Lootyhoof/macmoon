@@ -84,6 +84,10 @@
   min-height: 48px;
 }
 
+#browser-bottombox:not(:-moz-lwtheme) {
+  background-color: -moz-dialog;
+}
+
 /* ::::: app menu button ::::: */
 #appmenu-toolbar-button {
   color: black;
