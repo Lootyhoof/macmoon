@@ -4089,17 +4089,6 @@ html|*.highlighter-nodeinfobar-pseudo-classes {
   outline: none;
 }
 
-/* tab_utils and TMP undoclose */
-#btn_undoclose .toolbarbutton-icon,
-#undoclosetab-button .toolbarbutton-icon {
-  list-style-image: url("chrome://browser/skin/undoclosetab.png") !important;
-  -moz-image-region: rect(0px, 20px, 20px, 0px) !important;
-  -moz-transform: scaleX(1) rotate(0deg) !important;
-  width: 20px !important;
-  height: 20px !important;
-  margin: 0px !important;
-}
-
 /* Pale Moon: Feed icon */
 #ub-feed-button,
 #ub-feed-button > .button-box,
