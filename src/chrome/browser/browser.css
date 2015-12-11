@@ -648,6 +648,7 @@ toolbar:not([mode="text"]) #reload-button,
 toolbar:not([mode="text"]) #home-button,
 toolbar:not([mode="text"]) #downloads-button,
 toolbar:not([mode="text"]) #history-button,
+toolbar:not([mode="text"]) #history-menu-button,
 toolbar:not([mode="text"]) #bookmarks-button,
 toolbar:not([mode="text"]) #bookmarks-menu-button,
 toolbar:not([mode="text"]) #print-button,
@@ -663,6 +664,7 @@ toolbar:not([mode="text"]) #fullscreen-button {
 }
 
 toolbar #history-button[checked="true"],
+toolbar #history-menu-button[checked="true"],
 toolbar #bookmarks-button[checked="true"],
 toolbar #bookmarks-menu-button[checked="true"],
 toolbar #fullscreen-button[checked="true"] {
@@ -673,6 +675,7 @@ toolbar #fullscreen-button[checked="true"] {
 
 /* --- for Personas --- */
 #history-button[checked="true"]:-moz-lwtheme,
+#history-menu-button[checked="true"]:-moz-lwtheme,
 #bookmarks-button[checked="true"]:-moz-lwtheme,
 #bookmarks-menu-button[checked="true"]:-moz-lwtheme,
 #fullscreen-button[checked="true"]:-moz-lwtheme {
@@ -790,13 +793,16 @@ toolbar #fullscreen-button[checked="true"] {
 
 /* history sidebar button */
 
-#history-button {
+#history-button,
+#history-menu-button {
 	-moz-image-region: rect(0px 168px 24px 144px);
 }
-#history-button:not([disabled="true"]):hover {
+#history-button:not([disabled="true"]):hover,
+#history-menu-button:not([disabled="true"]):hover {
 	-moz-image-region: rect(24px 168px 48px 144px);
 }
-#history-button[disabled="true"] {
+#history-button[disabled="true"],
+#history-menu-button[disabled="true"] {
 	-moz-image-region: rect(48px 168px 72px 144px);
 }
 
@@ -1007,13 +1013,16 @@ toolbar[iconsize="small"] #downloads-button[disabled="true"] {
 
 /* history sidebar button */
 
-toolbar[iconsize="small"] #history-button {
+toolbar[iconsize="small"] #history-button,
+toolbar[iconsize="small"] #history-menu-button {
 	-moz-image-region: rect(0px 112px 16px 96px);
 }
-toolbar[iconsize="small"] #history-button:not([disabled="true"]):hover {
+toolbar[iconsize="small"] #history-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #history-menu-button:not([disabled="true"]):hover {
 	-moz-image-region: rect(16px 112px 32px 96px);
 }
-toolbar[iconsize="small"] #history-button[disabled="true"] {
+toolbar[iconsize="small"] #history-button[disabled="true"],
+toolbar[iconsize="small"] #history-menu-button[disabled="true"] {
 	-moz-image-region: rect(32px 112px 48px 96px);
 }
 
