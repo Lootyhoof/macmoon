@@ -2,5 +2,3 @@ skin	global			macmoon	chrome/global/
 skin	browser			macmoon	chrome/browser/
 skin	mozapps			macmoon	chrome/mozapps/
 skin	communicator	macmoon	chrome/communicator/
-skin	appver			macmoon	chrome/appver/25/ appversion<=26.0.0b2
-skin	appver			macmoon	chrome/appver/26/ appversion>26.0.0b2
