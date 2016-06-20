@@ -1952,44 +1952,6 @@ tabpanels {
 	background: url("chrome://browser/skin/tabs/activetab-right-persona-no-bkg.png") no-repeat top right;
 }
 
-/* ..... tab focus state ..... */
-
-.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {
-	-moz-user-focus: normal;
-}
-
-.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme):focus {
-	outline: 2px solid #b0c4de;
-	-moz-outline-radius-topleft: 14px;
-	-moz-outline-radius-topright: 14px;
-}
-
-.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme):focus > .tab-image-middle,
-.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme):focus > .tab-close-button {
-	box-shadow: inset 0 2px rgba(66, 134, 222, 0.25);
-}
-
-/* --- for Personas (tab focus state) --- */
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme:focus {
-	outline: none;
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme:focus > .tab-image-middle,
-.tabbrowser-tab[selected="true"]:-moz-lwtheme:focus > .tab-close-button {
-	box-shadow: none;
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme:focus .tab-text {
-	border-radius: 3px;
-	box-shadow: inset 0 0 1px 1px rgba(124, 192, 255, 0.5);
-	background-color: rgba(124, 192, 255, 0.1)/*#7cc0ff*/;
-}
-
-.tabbrowser-tabs {
- -moz-margin-start: 3px;
-}
-
 /* ..... favicon ..... */
 
 .tabbrowser-tab .tab-icon-image  {
