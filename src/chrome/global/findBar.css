@@ -19,13 +19,6 @@ findbar {
 	min-width: 1px;
 }
 
-/* --- for Personas --- */ /* ここでは効かないので、global/global.css にて指定 */
-/*#main-window[persona] #browser-bottombox #FindToolbar {
-	border-top: 1px solid;
-	-moz-border-top-colors: #a3a3a3 !important;
-	background: url("chrome://global/skin/basic/findbar-bkg-personas.png") repeat-x center;
-}*/
-
 /* ::::: findbar close button ::::: */
 
 .findbar-closebutton {
@@ -34,16 +27,6 @@ findbar {
 	padding-bottom: 0;
 	border: none !important;
 	background-color: transparent !important;
-	list-style-image: url("chrome://global/skin/icons/close-mfn.png");
-	-moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-.findbar-closebutton:hover {
-	-moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.findbar-closebutton:hover:active {
-	-moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 /* ::::: find textbox ::::: */

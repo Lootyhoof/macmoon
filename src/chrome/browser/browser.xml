@@ -36,7 +36,7 @@
 				</xul:stack>
 				<xul:label class="tab-text" flex="1" xbl:inherits="value=label,crop,accesskey" crop="right"/>
 			</xul:hbox>
-			<xul:toolbarbutton class="tab-close-button" anonid="close-button" tabindex="-1"/>
+			<xul:toolbarbutton class="tab-close-button close-icon" anonid="close-button" tabindex="-1"/>
 			<xul:hbox class="tab-image-right" xbl:inherits="pinned,selected,titlechanged"/>
 		</content>
 	</binding>

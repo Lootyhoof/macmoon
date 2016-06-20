@@ -57,18 +57,9 @@ notification[type="critical"] .messageImage {
 }
 
 .messageCloseButton {
-  list-style-image: url("chrome://global/skin/icons/closetab.png");
   padding: 4px 2px;
   border: none !important;
   background: none;
-}
-
-.messageCloseButton:hover {
-  list-style-image: url("chrome://global/skin/icons/closetab-hover.png");
-}
-
-.messageCloseButton:hover:active {
-  list-style-image: url("chrome://global/skin/icons/closetab-active.png");
 }
 
 /* Popup notification */

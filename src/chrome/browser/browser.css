@@ -1730,19 +1730,9 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-text {
 }
 
 .panel-promo-closebutton {
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
   border: none;
   -moz-margin-end: -14px;
   margin-top: -8px;
-}
-
-.panel-promo-closebutton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.panel-promo-closebutton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 .panel-promo-closebutton > .toolbarbutton-text {
@@ -2010,7 +2000,6 @@ tabpanels {
 	padding: 2px 0 0;
 	border: none;
 	background-color:transparent;
-	list-style-image: url("chrome://browser/skin/tabs/tab-close.png");
 	-moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 
@@ -2191,16 +2180,6 @@ stack[chromedir="rtl"] > hbox > .tabs-alltabs-box-animate {
 	margin: 0 0 1px 0;
 	padding: 2px 2px 0;
 	border: none;
-	list-style-image: url("chrome://browser/skin/tabs/tab-close.png");
-	-moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-.tabs-closebutton:hover {
-	-moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.tabs-closebutton:hover:active {
-	-moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 /* ::::: toolbarbutton chevron ::::: */
@@ -4082,16 +4061,7 @@ panel[dimmed="true"] {
 #addonbar-closebutton {
   padding: 0;
   margin: 0 4px;
-  list-style-image: url("chrome://global/skin/icons/closetab.png");
   border: none;
-}
-
-#addonbar-closebutton:hover {
-  list-style-image: url("chrome://global/skin/icons/closetab-hover.png");
-}
-
-#addonbar-closebutton:hover:active {
-  list-style-image: url("chrome://global/skin/icons/closetab-active.png");
 }
 
 /* Status panel */
