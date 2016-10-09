@@ -9,16 +9,17 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>macmoon@lootyhoof-pm</em:id>
-    <em:version>1.3.0</em:version>
+    <em:version>1.4.0</em:version>
     <em:name>MacMoon</em:name>
     <em:description>The default Firefox 2 theme for Mac, now for Pale Moon!</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>macmoon</em:internalName>
+    <em:skinnable>true</em:skinnable>
 
     <em:contributor>SmartBright</em:contributor>
     <em:contributor>Kelly Cunningham</em:contributor>
-	<em:contributor>Mozilla</em:contributor>
+    <em:contributor>Mozilla</em:contributor>
     <em:contributor>Graciliano (Win10 caption buttons)</em:contributor>
 
     <em:targetApplication>
