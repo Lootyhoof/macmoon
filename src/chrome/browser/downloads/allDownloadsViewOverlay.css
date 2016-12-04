@@ -15,6 +15,7 @@
 
 .downloadTypeIcon {
   -moz-margin-end: 8px;
+  -moz-margin-start: 8px;
   /* Ensure icons are displayed at 32px size even on Retina display */
   height: 32px;
   width: 32px;
