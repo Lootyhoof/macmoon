@@ -1778,31 +1778,34 @@ sidebarheader > .tabs-closebutton > .toolbarbutton-text {
 
 #TabsToolbar {
 	-moz-appearance: none;
-	padding-bottom: 3px;
-	border-bottom: none;
-	background: url("chrome://browser/skin/tabs/tabs-bkg.png") repeat-x bottom left;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) {
+  border-bottom: 4px solid;
+  -moz-border-bottom-colors: #949494 #D7D7D7 #D7D7D7 #979797;
+}
+
+#main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) {
+  background-color: rgb(215, 215, 215);
+  background-image: linear-gradient(transparent 50%, rgb(211, 211, 211) 50%);
+  background-size: 4px 4px;
 }
 
 /* --- for Personas --- */
-#TabsToolbar:-moz-lwtheme {
+#main-window:not([tabsintitlebar]) #TabsToolbar:-moz-lwtheme {
   margin-bottom: -2px;
-  background: url("chrome://browser/skin/tabs/tabs-bkg-persona.png") repeat-x bottom left;
+  background-color: rgb(128, 128, 128);
+  border-bottom: 4px solid;
+  -moz-border-bottom-colors: rgba(0,0,0,0.5) rgba(255,255,255,0.75) rgba(255,255,255,0.75) rgba(0,0,0,0.5);
 }
 
-#main-window[tabsintitlebar] #TabsToolbar {
-  background: url("chrome://browser/skin/tabs/tabs-bkg-persona.png") repeat-x bottom left !important;
+#tabbrowser-tabs {
+	-moz-padding-end: 2px;
+  margin-bottom: -1px;
 }
 
-.tabs-container {
-	-moz-padding-end: 3px;
-}
-
-.tabs-container:not([overflow="true"]) {
-	-moz-padding-start: 3px;
-}
-
-.tabs-bottom {
-	margin: 0;
+#tabbrowser-tabs:not([overflow="true"]) {
+	-moz-padding-start: 2px;
 }
 
 tabpanels {
@@ -1812,94 +1815,51 @@ tabpanels {
 /* :::::::::: Tabs :::::::::: */
 
 .tabbrowser-tab {
-	-moz-appearance: none;
-	-moz-binding: url("chrome://browser/skin/browser.xml#tabbrowser-tab");
-	margin: 0; /* global/tabbox.css/tab の継承値をクリア */
-	border: none;
-	background: transparent;
-	height: 22px;
+  -moz-appearance: none;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  border: none;
+  background: transparent;
+  min-height: 22px;
+}
+
+.tabbrowser-tab[first-visible-tab="true"] {
+  margin-left: 1px;
+}
+
+.tabbrowser-tab[last-visible-tab="true"] {
+  margin-right: 1px;
+}
+
+.tabbrowser-tab[selected="true"] {
+  border: 1px solid rgba(44, 44, 44, 0.37);
+  padding: 0px 7px 2px 7px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(221, 221, 221));
+}
+
+.tabbrowser-tab[selected="true"]:-moz-lwtheme {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.5));
+  border: 1px solid rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+
+.tabbrowser-tab:not([selected="true"]) {
+  padding: 0px 8px 2px 8px;
+}
+
+.tabbrowser-tab:not([selected="true"]):-moz-lwtheme {
+	background-color: rgba(255, 255, 255, 0.3);
+	opacity: 1;
 }
 
 .tabbrowser-tab:hover:not([selected="true"]) {
 	background-color: rgba(128, 128, 128, 0.1);
 }
 
-.tabbrowser-tab > .tab-image-left {
-	width: 8px;
-}
-
-.tabbrowser-tab > .tab-image-right {
-	background: url("chrome://browser/skin/tabs/inactivetab-right.png") repeat-y top right;
-	width: 8px;
-}
-
-.tabbrowser-tab[beforeselected="true"] > .tab-image-right {
-	background: none;
-}
-
-.tabbrowser-tab[selected="true"] > .tab-image-left {
-	background: url("chrome://browser/skin/tabs/activetab-left.png") no-repeat top left;
-}
-
-.tabbrowser-tab[selected="true"] > .tab-image-middle,
-.tabbrowser-tab[selected="true"] > .tab-close-button,
-.tabbrowser-tab[selected="true"] > * > .tab-content {
-	background: url("chrome://browser/skin/tabs/activetab-middle.png") repeat-x top center;
-}
-
-.tabbrowser-tab[selected="true"] > .tab-image-right {
-	background: url("chrome://browser/skin/tabs/activetab-right.png") no-repeat top right;
-}
-
-/* --- for Personas (tabs) --- */
-.tabbrowser-tab:-moz-lwtheme {
-	background-color: rgba(255, 255, 255, 0.3);
-	opacity: 1;
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme {
-	background-color: transparent;
-	opacity: 1;
-}
-
 .tabbrowser-tab:hover:not([selected="true"]):-moz-lwtheme {
 	background-color: rgba(210, 210, 210, 0.3);
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme > .tab-image-left {
-	background: url("chrome://browser/skin/tabs/activetab-left-persona.png") no-repeat top left;
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme > .tab-image-middle,
-.tabbrowser-tab[selected="true"]:-moz-lwtheme > .tab-close-button {
-	background: url("chrome://browser/skin/tabs/activetab-middle-persona.png") repeat-x top center;
-}
-
-.tabbrowser-tab[selected="true"]:-moz-lwtheme > .tab-image-right {
-	background: url("chrome://browser/skin/tabs/activetab-right-persona.png") no-repeat top right;
-}
-
-/* ... first-tab & last-tab gradient background ... */
-
-.tabbrowser-tab[selected="true"][first-tab="true"]:-moz-lwtheme > .tab-image-left {
-	background: url("chrome://browser/skin/tabs/activetab-left-persona-gradient-bkg.png") no-repeat top left;
-}
-
-.tabbrowser-tab[selected="true"][last-tab="true"]:-moz-lwtheme > .tab-image-right {
-	background: url("chrome://browser/skin/tabs/activetab-right-persona-gradient-bkg.png") no-repeat top right;
-}
-
-.tabbrowser-tab[selected="true"][first-tab="true"][last-tab="true"]:-moz-lwtheme > .tab-image-left {
-	background: url("chrome://browser/skin/tabs/activetab-left-persona-no-bkg.png") no-repeat top left;
-}
-
-.tabbrowser-tab[selected="true"][first-tab="true"][last-tab="true"]:-moz-lwtheme > .tab-image-middle,
-.tabbrowser-tab[selected="true"][first-tab="true"][last-tab="true"]:-moz-lwtheme > .tab-close-button {
-	background: url("chrome://browser/skin/tabs/activetab-middle-persona-no-bkg.png") repeat-x top center;
-}
-
-.tabbrowser-tab[selected="true"][first-tab="true"][last-tab="true"]:-moz-lwtheme > .tab-image-right {
-	background: url("chrome://browser/skin/tabs/activetab-right-persona-no-bkg.png") no-repeat top right;
 }
 
 /* ..... favicon ..... */
@@ -2000,6 +1960,14 @@ tabpanels {
 .tabbrowser-tab[pinned] .tab-text,
 .tabbrowser-tab[pinned] .tab-close-button {
   display: none !important;
+}
+
+/* Tab separators */
+
+.tabbrowser-tab:not([selected]):not([beforeselected]):not([last-visible-tab]),
+#tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab]) {
+  border-right: 3px solid;
+  -moz-border-right-colors: rgba(255,255,255,0.39) rgba(63,63,63,0.33) rgba(255,255,255,0.39);
 }
 
 /* :::::::::: New Tab Button adjoining tabs :::::::::: */
@@ -3220,10 +3188,6 @@ panel[type="arrow"][popupid="click-to-play-plugins"] > .panel-arrowcontainer > .
       min-height: 25px;
       margin-top: 3px;
     }
-    
-    #main-window[sizemode="maximized"][tabsontop=true] #TabsToolbar {
-      padding-bottom: 2px;
-    }
 
     #main-window[sizemode=maximized] .titlebar-button {
       padding-top: 8px;
@@ -3441,33 +3405,46 @@ panel[type="arrow"][popupid="click-to-play-plugins"] > .panel-arrowcontainer > .
     }
   }
     
+  #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] #main-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+    background-color: rgba(255,255,255,.5);
+    border-radius: 4px;
+  }  
+  
   @media (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {
     /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] .tabbrowser-tab:not([selected]) > * > .tab-text {
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] .tabbrowser-tab:not([selected]) > * > * > .tab-text {
       background: transparent;
       /* Give text an aura to make it more readable on glass */
       text-shadow: 0 0 .5em white, 0 0 .5em white, 0 0 .5em white, 0 0 .5em white, 0 1px 0 rgba(255,255,255,.4);
-    }
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] #main-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive) {
-      background-color: rgba(255,255,255,.5);
-      border-radius: 4px;
     }
   }
   
   @media (-moz-os-version: windows-win8),
          (-moz-os-version: windows-win10) {
     /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
+    #main-window[tabsintitlebar] #navigator-toolbox[tabsontop="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] .tabbrowser-tab:not([selected]) > * > .tab-text:not(:-moz-window-inactive) {
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
       background: transparent;
-      /* Use a light text color rather than fog on Win8/10 */
+    }
+    
+    /* Use a light text color rather than fog on Win8/10 */
+    #main-window[tabsintitlebar][darkwindowframe="true"] #navigator-toolbox[tabsontop="true"],
+    #main-window[sizemode="maximized"][darkwindowframe="true"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
+    #main-window[sizemode="maximized"][darkwindowframe="true"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
+    #main-window[sizemode="maximized"][darkwindowframe="true"] #navigator-toolbox[tabsontop="true"] .tabbrowser-tab:not([selected]) > * > * > .tab-text:not(:-moz-window-inactive) {
       color: white;
+    }
+    
+    #main-window[tabsintitlebar]:not([darkwindowframe="true"]) #navigator-toolbox[tabsontop="true"],
+    #main-window[sizemode="maximized"]:not([darkwindowframe="true"]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
+    #main-window[sizemode="maximized"]:not([darkwindowframe="true"]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
+    #main-window[sizemode="maximized"]:not([darkwindowframe="true"]) #navigator-toolbox[tabsontop="true"] .tabbrowser-tab:not([selected]) > * > * > .tab-text:not(:-moz-window-inactive) {
+      color: black;
     }
   }
     
