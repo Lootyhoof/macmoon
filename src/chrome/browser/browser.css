@@ -307,7 +307,7 @@ toolbarbutton.bookmark-item,
 
 toolbarbutton.bookmark-item:hover,
 #PersonalToolbar #bookmarks-menu-button:hover {
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 8px 8px rgba(0, 0, 0, 0.12),
 		inset 0 1px rgba(0, 0, 0, 0.12),
 		inset 0 -1px rgba(0, 0, 0, 0.07);
@@ -319,7 +319,7 @@ toolbarbutton.bookmark-item:hover:active,
 toolbarbutton.bookmark-item[open="true"],
 #PersonalToolbar #bookmarks-menu-button:hover:active,
 #PersonalToolbar #bookmarks-menu-button[open="true"] {
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 8px 8px rgba(0, 0, 0, 0.24),
 		inset 0 1px rgba(0, 0, 0, 0.26),
 		inset 0 -1px rgba(255, 255, 255, 0.24);
@@ -329,7 +329,7 @@ toolbarbutton.bookmark-item[open="true"],
 
 toolbarbutton.bookmark-item:-moz-lwtheme:hover,
 #PersonalToolbar #bookmarks-menu-button:-moz-lwtheme:hover {
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 8px 8px rgba(0, 0, 0, 0.16),
 		inset 0 1px rgba(0, 0, 0, 0.12),
 		inset 0 -1px rgba(0, 0, 0, 0.07);
@@ -340,7 +340,7 @@ toolbarbutton.bookmark-item:-moz-lwtheme:hover:active,
 toolbarbutton.bookmark-item[open="true"]:-moz-lwtheme,
 #PersonalToolbar #bookmarks-menu-button:-moz-lwtheme:hover:active,
 #PersonalToolbar #bookmarks-menu-button[open="true"]:-moz-lwtheme {
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 8px 8px rgba(0, 0, 0, 0.28),
 		inset 0 1px rgba(0, 0, 0, 0.26),
 		inset 0 -1px rgba(255, 255, 255, 0.24);
