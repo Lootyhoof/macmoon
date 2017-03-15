@@ -1,11 +1,6 @@
-/* ***** NO LICENSE mentioned on the original code *****
- *
- * Contributor(s):
- *   SmartBright (hb.smartBright@gmail.com) <macfox_nostalgia>
- *
- * ***************************************************** */
-
-/* <<<<< macfox_nostalgia >>>>> */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* ===== config.css =====================================================
   == Styles for about:config warning page.
@@ -16,8 +11,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #warningScreen {
-	background: #fff url("chrome://global/skin/basic/bkg.png") repeat;
-/*	font: 12px "Lucida Grande", Tahoma, Arial, sans-serif;*/
+	background-color: rgb(240, 240, 240);
+  background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
+  background-size: 4px 4px;
 	font-size: 12px;
 }
 

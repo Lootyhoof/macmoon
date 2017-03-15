@@ -3676,7 +3676,9 @@ panel[dimmed="true"] {
   border-bottom-style: none;
   padding-top: 1px;
   border-top: 1px solid #a3a3a3;
-  background: #fff url("chrome://global/skin/basic/bkg.png") repeat;
+  background-color: rgb(240, 240, 240);
+  background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
+  background-size: 4px 4px;
   min-height: 19px;
 }
 
