@@ -156,15 +156,6 @@ resizer[dir="bottomend"] {
 	padding: 0 1px;
 }
 
-/* ::::: findbar ::::: */
-
-/* --- for personas --- */ /* global/findBar.css で指定しても効かないので、ここで指定する */
-#browser-bottombox #FindToolbar:-moz-lwtheme {
-	border-top: 1px solid;
-	-moz-border-top-colors: #a3a3a3 !important;
-	background: url("chrome://global/skin/basic/findbar-bkg-personas.png") repeat-x center;
-}
-
 /* ::::: sidebar ::::: */
 
 #sidebar {

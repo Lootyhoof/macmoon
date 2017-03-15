@@ -19,6 +19,10 @@ findbar {
 	min-width: 1px;
 }
 
+findbar:-moz-lwtheme {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.63), rgba(34, 34, 34, 0.09));
+}
+
 /* ::::: findbar close button ::::: */
 
 .findbar-closebutton {
