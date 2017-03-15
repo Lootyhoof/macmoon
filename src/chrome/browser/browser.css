@@ -1794,7 +1794,7 @@ sidebarheader > .tabs-closebutton > .toolbarbutton-text {
 /* --- for Personas --- */
 #main-window:not([tabsintitlebar]) #TabsToolbar:-moz-lwtheme {
   margin-bottom: -2px;
-  background-color: rgb(128, 128, 128);
+  background-color: rgba(128, 128, 128, 0.12);
   border-bottom: 4px solid;
   -moz-border-bottom-colors: rgba(0,0,0,0.5) rgba(255,255,255,0.75) rgba(255,255,255,0.75) rgba(0,0,0,0.5);
 }
