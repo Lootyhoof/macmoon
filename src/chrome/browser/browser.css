@@ -21,7 +21,9 @@
 #navigator-toolbox > toolbar:not(#TabsToolbar):not(:-moz-lwtheme) {
   -moz-appearance: none;
   border-style: none;
-  background: url("chrome://global/skin/basic/toolbox-bkg.png") repeat;
+  background-color: rgb(246, 246, 246);
+  background-image: linear-gradient(transparent 50%, rgb(243, 243, 243) 50%);
+  background-size: 4px 4px;
 }
 
 #PersonalToolbar:-moz-lwtheme,
