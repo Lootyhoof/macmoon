@@ -1,44 +1,6 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is mozilla.org code.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-2004
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Kevin Gerich  <webmail@kmgerich.com>
- *   Daniel Brooks <db48x@yahoo.com>
- *   Florian QUEZE <f.qu@queze.net>
- *   SmartBright <hb.smartbright@gmail.com> (macfox_nostalgia)
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
-
-/* <<<<< macfox_nostalgia >>>>> */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* ===== pageInfo.css ===================================================
   == Styles for Page Information Window.
@@ -48,21 +10,39 @@
 
 /* :::::::::: Selector :::::::::: */
 
-.viewSelector/* Fx3.5 */,
-#topBar/* Fx3.6 */ {
+#topBar {
 	margin: 0;
 	-moz-padding-start: 10px;
 	border-bottom: 1px solid #a3a3a3;
-	background: #fff url("chrome://global/skin/basic/selector-bkg.png") repeat;
+	background-color: rgb(247, 247, 247);
+  background-image: linear-gradient(transparent 50%, rgb(244, 244, 244) 50%);
+  background-size: 4px 4px;
 	color: #000;
 }
 
 #viewGroup radio {
 	-moz-appearance: none;
-	-moz-box-orient: vertical;
-	-moz-box-align: center;
+  -moz-box-orient: vertical;
+	margin: 0 1px;
 	padding: 5px 3px 1px;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	background-color: transparent;
+	min-width: 4.5em;
 	list-style-image: url("chrome://browser/skin/pageInfo.png");
+}
+
+#viewGroup radio:hover {
+	border-right: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	background-color: #ededed;
+}
+
+#viewGroup radio[selected="true"] {
+	border-right: 1px solid #b9b9b9;
+	border-left: 1px solid #b9b9b9;
+	background-color: #ddd;
+	color: #000;
 }
 
 #generalTab {
