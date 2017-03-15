@@ -94,7 +94,7 @@
 	margin: 2px 4px;
 	-moz-padding-start: 4px;
 	-moz-padding-end: 4px;
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 1px 1px rgba(0, 0, 0, 0.68),
 		inset 2px 0 rgba(0, 0, 0, 0.08),
 		inset -2px 0 rgba(0, 0, 0, 0.08),
@@ -199,7 +199,7 @@
 /* :::::::::: Popup Panel from URL-bar :::::::::: */
 
 /* URLバーからpopupするpanelはどうにもうまく表示されないようなので、ここで修正。
-   どうも、"-moz-box-shadow" はうまく表示してもらえない、みたい。 */
+   どうも、"box-shadow" はうまく表示してもらえない、みたい。 */
 
 popupset > #editBookmarkPanel #editBMPanel_namePicker[droppable="false"],
 popupset > #editBookmarkPanel textbox {

@@ -129,7 +129,7 @@ textbox {
 	margin-top: 1px;
 	padding: 0;
 	border: none;
-	-moz-box-shadow: none;
+	box-shadow: none;
 	background: transparent !important;
 	min-height: 0;
 }
@@ -216,7 +216,7 @@ treechildren::-moz-tree-cell-text(broken) {
 	padding: 2px 3px 1px;
 	border: 1px solid;
 	border-color: #7c7c7c #c3c3c3 #ddd;
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 1px #d3d3d3,
 		inset 1px 0 #f0f0f0,
 		inset -1px 0 #f0f0f0;

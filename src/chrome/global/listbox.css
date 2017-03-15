@@ -93,7 +93,7 @@ listheader {
 	-moz-box-align: center;
 	padding: 0 4px;
 	border-bottom:1px solid #a0a0a0;
-	-moz-box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
+	box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
 	background: url("chrome://global/skin/tree/tree-header.png") repeat-x top left;
 	color: #000;
 }

@@ -184,7 +184,7 @@
 	margin: 0 1px;
 	padding: 0;
 	border: 1px solid transparent;
-	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 #organizerScopeBar > toolbarbutton > label,

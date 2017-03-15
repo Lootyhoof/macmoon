@@ -20,7 +20,7 @@
 	margin-bottom: 3px !important;
 	-moz-margin-end: 4px !important;
 	-moz-padding-start: 6px;
-	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
 #Console2Window #TextboxFilter .textbox-search-icons {

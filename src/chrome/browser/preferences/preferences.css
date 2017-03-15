@@ -157,7 +157,7 @@ radio[pane=paneSync] {
 }
 
 #BrowserPreferences #handlersView #typeColumn {
-	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 #paneMain description,

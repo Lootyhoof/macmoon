@@ -48,7 +48,7 @@ filefield {
 	margin: 2px 3px;
 	border: 1px solid;
 	border-color: #7c7c7c #c3c3c3 #ddd;
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 1px #c3c3c3,
 		inset 1px 0 #f0f0f0,
 		inset -1px 0 #f0f0f0;
@@ -72,7 +72,7 @@ filefield {
 	margin: 0;
 	border: none;
 	background-color: transparent;
-	-moz-box-shadow: none;
+	box-shadow: none;
 	min-height: 0;
 }
 

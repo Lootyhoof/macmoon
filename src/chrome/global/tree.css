@@ -248,7 +248,7 @@ treecolpicker {
 	-moz-box-pack: center;
 	padding: 0 4px;
 	border-bottom:1px solid #a0a0a0;
-	-moz-box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
+	box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
 	background: url("chrome://global/skin/tree/tree-header.png") repeat-x top left;
 	color: #000;
 /*	min-height: 14px;*/
@@ -256,7 +256,7 @@ treecolpicker {
 
 /* 確実にではないけど、ほとんどの場合、これで左ボーダーが消えてくれる。*/
 treecol[ordinal="1"] {
-	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .treecol-image { /* すぐ上の treecolpicker のこと */
@@ -287,26 +287,26 @@ treecolpicker:hover:active {
 
 treecol[dragging="true"] {
 	background-image: url("chrome://global/skin/tree/tree-header.png") !important;
-	-moz-box-shadow:
+	box-shadow:
 /*		inset 1px 0 rgba(0, 0, 0, .25),*/ /* border-left */
 		inset 0 20px rgba(0, 0, 0, .08), /* background-color */
 		inset 0 0 2px rgba(0, 0, 0, .15) !important;
 }
 
 treecol[insertafter="true"] {
-	-moz-box-shadow:
+	box-shadow:
 		inset 1px 0 rgba(0, 0, 0, .25), /* border-left */
 		inset -1px 0 #97bee0; /* border-right insert color */
 }
 
 treecol[ordinal="1"][insertafter="true"] {
-	-moz-box-shadow:
+	box-shadow:
 /*		inset 1px 0 rgba(0, 0, 0, .25),*/ /* clear border-left */
 		inset -1px 0 #97bee0; /* border-right insert color */
 }
 
 treecol[insertbefore="true"] {
-	-moz-box-shadow: inset 1px 0 #97bee0; /* border-left insert color */
+	box-shadow: inset 1px 0 #97bee0; /* border-left insert color */
 }
 
 treechildren::-moz-tree-column(insertbefore) {

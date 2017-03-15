@@ -59,7 +59,7 @@ dialog*/ {
 /*	border: 1px solid #a3a3a3;*/
 	border: 1px solid;
 	border-color: #a0a0a0 #c0c0c0 #d0d0d0;
-	-moz-box-shadow:
+	box-shadow:
 		inset 0 2px rgba(0, 0, 0, .05),
 		inset 1px 0 rgba(0, 0, 0, .01),
 		inset -1px 0 rgba(0, 0, 0, .01);

@@ -36,7 +36,7 @@ findbar {
 	padding-top: 0;
 	padding-bottom: 0;
 	-moz-padding-start: 20px;
-	-moz-border-radius: 50%;
+	border-radius: 50%;
 	background: #fff url("chrome://global/skin/icons/findbar-textbox-bkg.png") no-repeat left center;
 	min-height: 20px;
 }
