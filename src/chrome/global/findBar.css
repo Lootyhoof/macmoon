@@ -15,7 +15,7 @@
 
 findbar {
 	border-top: 1px solid #a3a3a3;
-	background: #f6f6f6 url("chrome://global/skin/basic/findbar-bkg.png") repeat-x center;
+	background-image: linear-gradient(rgb(246, 246, 246), rgb(225, 225, 225));
 	min-width: 1px;
 }
 
@@ -36,7 +36,7 @@ findbar {
 	padding-top: 0;
 	padding-bottom: 0;
 	-moz-padding-start: 20px;
-	border-radius: 50%;
+	border-radius: 9.5pt;
 	background: #fff url("chrome://global/skin/icons/findbar-textbox-bkg.png") no-repeat left center;
 	min-height: 20px;
 }
