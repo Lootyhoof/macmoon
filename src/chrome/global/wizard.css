@@ -14,50 +14,50 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .wizard-header {
-	border-bottom: 1px solid #a3a3a3;
-	background-color: #fff;
-	color: #000;
+  border-bottom: 1px solid #a3a3a3;
+  background-color: #fff;
+  color: #000;
 }
 
 .wizard-header-box-1 {
-	padding: 5px 0;
+  padding: 5px 0;
 }
 
 wizard[description=""] .wizard-header-description {
-	display: none;
+  display: none;
 }
 
 .wizard-header-label {
-	-moz-margin-start: 23px;
-	font-weight: bold;
+  -moz-margin-start: 23px;
+  font-weight: bold;
 }
 
 .wizard-header-description {
-	-moz-margin-start: 44px;
+  -moz-margin-start: 44px;
 }
 
 wizard[branded="true"] .wizard-header-icon {
-	list-style-image: url("chrome://branding/content/icon48.png");
-	-moz-margin-end: 5px;
+  list-style-image: url("chrome://branding/content/icon48.png");
+  -moz-margin-end: 5px;
 }
 
 .wizard-page-box {
-	margin: 10px 44px;
+  margin: 10px 44px;
 }
 
 .wizard-buttons-separator {
-	margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .wizard-buttons-box-2 {
-	margin: 10px;
+  margin: 10px;
 }
 
 .wizard-button[dlgtype="finish"],
 .wizard-button[dlgtype="next"] {
-	-moz-margin-start: 0px !important;
+  -moz-margin-start: 0px !important;
 }
 
 /*.wizard-button[dlgtype="back"] {
-	-moz-margin-end: 0px !important;
+  -moz-margin-end: 0px !important;
 }*/

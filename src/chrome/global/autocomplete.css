@@ -13,24 +13,24 @@
 
 /* .padded is used by autocomplete widgets that don't have an icon. Gross. -dwh */
 textbox:not(.padded) {
-	cursor: default;
-	padding: 0;
+  cursor: default;
+  padding: 0;
 }
 
 textbox[nomatch="true"][highlightnonmatches="true"] {
-	color: red;
+  color: red;
 }
 
 .autocomplete-textbox-container {
-	-moz-box-align: center;
+  -moz-box-align: center;
 }
 
 textbox:not(.padded) .textbox-input-box {
-	margin: 0 3px;
+  margin: 0 3px;
 }
 
 .textbox-input-box {
-	-moz-box-align: center;
+  -moz-box-align: center;
 }
 
 /* ::::: autocomplete popups ::::: */
@@ -38,137 +38,137 @@ textbox:not(.padded) .textbox-input-box {
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
-	-moz-appearance: none;
-	padding: 0;
-	border: 1px solid #a3a3a3;
-	background-color: rgb(240, 240, 240);
+  -moz-appearance: none;
+  padding: 0;
+  border: 1px solid #a3a3a3;
+  background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
 }
 
 .autocomplete-history-popup {
-	max-height: 180px;
+  max-height: 180px;
 }
 
 /* ::::: tree ::::: */
 
 .autocomplete-tree {
-	-moz-appearance: none !important;
-	border: none !important;
-	background-color: transparent !important;
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .autocomplete-treecol {
-	-moz-appearance: none !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
+  -moz-appearance: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
 }
 
 /* GTK calculates space for a sort arrow */
 .autocomplete-treecol > .treecol-sortdirection {
-	-moz-appearance: none !important;
+  -moz-appearance: none !important;
 }
 
 .autocomplete-treebody::-moz-tree-cell-text {
-	-moz-padding-start: 8px;
+  -moz-padding-start: 8px;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-row(even) {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-row(selected) {
-	background-color: #4b80d5;
-	color: #fff;
+  background-color: #4b80d5;
+  color: #fff;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
-	max-width: 16px;
-	height: 16px;
+  max-width: 16px;
+  height: 16px;
 }
 
 /* ::::: richlistbox autocomplete ::::: */
 
 .autocomplete-richlistbox {
-	margin: 0;
-	background-color: rgb(240, 240, 240);
+  margin: 0;
+  background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
 }
 
 .autocomplete-richlistitem[selected="true"] {
-	background: #4B80D5 url("chrome://global/skin/menu/menu_item_active_bkg.png");
-	color: #fff;
+  background: #4B80D5 url("chrome://global/skin/menu/menu_item_active_bkg.png");
+  color: #fff;
 }
 
 .autocomplete-richlistitem {
-	padding: 1px 2px;
+  padding: 1px 2px;
 }
 
 .autocomplete-richlistitem:not(:first-child)/*:not([selected])*/ {
-	border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .ac-site-icon {
-	width: 16px; 
-	height: 16px;
-	margin: 0 5px -3px 3px;
+  width: 16px; 
+  height: 16px;
+  margin: 0 5px -3px 3px;
 }
 
 .ac-type-icon {
-	width: 16px; 
-	height: 16px;
+  width: 16px; 
+  height: 16px;
 }
 
 .ac-extra > .ac-result-type-tag {
-	margin: 0 4px;
+  margin: 0 4px;
 }
 
 .ac-extra > .ac-comment {
-	padding-right: 4px;
+  padding-right: 4px;
 }
 
 .ac-ellipsis-after {
-	margin: 2px 0 0 0 !important;
-	padding: 0; 
-	min-width: 1em;
+  margin: 2px 0 0 0 !important;
+  padding: 0; 
+  min-width: 1em;
 }
 
 .ac-normal-text {
-	margin: 2px 0 0 0 !important;
-	padding: 0;
+  margin: 2px 0 0 0 !important;
+  padding: 0;
 }
 
 .ac-normal-text > html|span {
-	margin: 0 !important;
-	padding: 0;
+  margin: 0 !important;
+  padding: 0;
 }
 
 html|span.ac-emphasize-text {
-	font-weight: bold;
-	text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 html|span.ac-emphasize-alt {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ac-title,
 .ac-url {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 /* ::::: textboxes inside toolbarpaletteitems ::::: */
 
 toolbarpaletteitem > toolbaritem > textbox > hbox > hbox > html|*.textbox-input {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 toolbarpaletteitem > toolbaritem > * > textbox > hbox > hbox > html|*.textbox-input {
-	visibility: hidden;
+  visibility: hidden;
 }

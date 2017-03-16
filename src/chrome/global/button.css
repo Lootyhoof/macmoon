@@ -28,8 +28,8 @@ button {
 }
 
 notification button {
-	background: url(chrome://global/skin/button/body.png) repeat-x top left #fff;
-	box-shadow:
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fff;
+  box-shadow:
     0 0 2px rgba(255, 255, 255, 0.4) inset,
     0 4px 6px rgba(255, 255, 255, 0.4) inset,
     0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
@@ -86,24 +86,24 @@ button[disabled="true"] .button-icon {
 
 .button-menu-dropmarker,
 .button-menubutton-dropmarker {
-	margin: 2px -3px 0 3px;
-	border: none;
-	background-color: transparent;
-	list-style-image: url("chrome://global/skin/button/dropmkr.png");
-	width: 7px;
-	height: 7px;
+  margin: 2px -3px 0 3px;
+  border: none;
+  background-color: transparent;
+  list-style-image: url("chrome://global/skin/button/dropmkr.png");
+  width: 7px;
+  height: 7px;
 }
 
 .button-menu-dropmarker:hover:active,
 .button-menu-dropmarker[open="true"],
 .button-menubutton-dropmarker:hover:active,
 .button-menubutton-dropmarker[open="true"] {
-	list-style-image: url("chrome://global/skin/button/dropmkr-black.png");
+  list-style-image: url("chrome://global/skin/button/dropmkr-black.png");
 }
   
 .button-menu-dropmarker[disabled="true"],
 .button-menubutton-dropmarker[disabled="true"] {
-	list-style-image: url("chrome://global/skin/button/dropmkr-dis.png");
+  list-style-image: url("chrome://global/skin/button/dropmkr-dis.png");
 }
 
 button[type="menu"]:not(#appmenu-button) dropmarker {

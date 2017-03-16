@@ -45,52 +45,52 @@
 /* ::::: dialog ::::: */
 
 dialog {
-	padding: 8px 8px 10px;
+  padding: 8px 8px 10px;
 }
 
 /* ::::: dialog buttons ::::: */
 
 .dialog-button {
-	margin-top: 6px;
+  margin-top: 6px;
 }
 
 /* ::::: dialog header ::::: */
 
 dialogheader {
-	margin: 0 3px 5px;
-	padding: 5px 8px;
-	border: 1px solid #4b80d5;
- 	background: #4b80d5 url("chrome://global/skin/basic/blue-header.png") center;
-	color: #fff;
+  margin: 0 3px 5px;
+  padding: 5px 8px;
+  border: 1px solid #4b80d5;
+  background: #4b80d5 url("chrome://global/skin/basic/blue-header.png") center;
+  color: #fff;
 }
 
 .dialogheader-title {
-	margin: 0 !important;
-	font-size: larger;
-	font-weight: bold;
+  margin: 0 !important;
+  font-size: larger;
+  font-weight: bold;
 }
 
 /* ::::: large dialog header ::::: */ /* 見たこと無い! */
 
 .header-large {
-	-moz-box-orient: vertical;
-	margin: 0;
-	border: none;
-	border-bottom: 2px solid;
-	-moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	-moz-padding-start: 25px;
-	-moz-padding-end: 5px;
- 	background: #4b80d5 url("chrome://global/skin/basic/blue-header.png") center;
-	color: #fff;
+  -moz-box-orient: vertical;
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  -moz-padding-start: 25px;
+  -moz-padding-end: 5px;
+  background: #4b80d5 url("chrome://global/skin/basic/blue-header.png") center;
+  color: #fff;
 }
 
 .header-large > .dialogheader-title {
-	font: inherit;
-	font-weight: bold;
+  font: inherit;
+  font-weight: bold;
 }
 
 .header-large > .dialogheader-description {
-	-moz-margin-start: 12px !important;
+  -moz-margin-start: 12px !important;
 }

@@ -20,21 +20,21 @@
    ではここで宣言される値を上書きする必要がある。*/
 
 dropmarker {
-	-moz-box-align: center;
-	-moz-box-pack: center;
-/*	border: 1px outset ThreeDShadow;
-	background-color: -moz-Dialog;*/
-	list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
-	-moz-image-region: auto;
-	width: 16px;
-	height: 16px;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+/*  border: 1px outset ThreeDShadow;
+  background-color: -moz-Dialog;*/
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+  -moz-image-region: auto;
+  width: 16px;
+  height: 16px;
 }
 
 dropmarker:hover:active:not([disabled]) {
-/*	border: 1px inset ThreeDShadow;*/
+/*  border: 1px inset ThreeDShadow;*/
 }
 
 dropmarker[disabled="true"] {
-/*	border: 1px solid ThreeDLightShadow;*/
-	list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+/*  border: 1px solid ThreeDLightShadow;*/
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
 }

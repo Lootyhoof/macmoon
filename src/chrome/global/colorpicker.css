@@ -49,42 +49,42 @@
 /* colorpicker button */
 
 colorpicker[type="button"] {
-/*	margin-top: 1px;*/
-	margin: 0 3px;
-	background: transparent url("chrome://global/skin/colorpicker/color-picker.png") no-repeat left center;
-	width: 50px;
-	height: 25px;
+/*  margin-top: 1px;*/
+  margin: 0 3px;
+  background: transparent url("chrome://global/skin/colorpicker/color-picker.png") no-repeat left center;
+  width: 50px;
+  height: 25px;
 }
 
 .colorpicker-button-colorbox {
-	margin: 6px 17px 6px 6px;
-	border: 1px solid #000;
+  margin: 6px 17px 6px 6px;
+  border: 1px solid #000;
 }
 
 colorpicker[type="button"][open="true"] {
-	background: url("chrome://global/skin/colorpicker/color-picker-open.png") no-repeat left center;
+  background: url("chrome://global/skin/colorpicker/color-picker-open.png") no-repeat left center;
 }
 
 /* ::::: colorpicker tiles ::::: */ /* これはとりあえず変更なし */
 
 .colorpickertile {
-	width: 20px;
-	height: 20px;
-	margin: 1px;
-	border-left: 1px solid ThreeDShadow;
-	border-top: 1px solid ThreeDShadow;
-	border-right: 1px solid ThreeDHighlight;
-	border-bottom: 1px solid ThreeDHighlight;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border-left: 1px solid ThreeDShadow;
+  border-top: 1px solid ThreeDShadow;
+  border-right: 1px solid ThreeDHighlight;
+  border-bottom: 1px solid ThreeDHighlight;
 }
 
 .colorpickertile[selected="true"] {
-	border : 2px outset #C0C0C0;
+  border : 2px outset #C0C0C0;
 }
 
 .colorpickertile[hover="true"] {
-	border: 2px dotted #FFFFFF;
+  border: 2px dotted #FFFFFF;
 }
 
 .cp-light[hover="true"] {
-	border: 2px dotted #909090;
+  border: 2px dotted #909090;
 }

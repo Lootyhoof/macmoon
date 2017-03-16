@@ -51,38 +51,38 @@
 /* :::::::::: bookmarking popup panel :::::::::: */
  
 #editBookmarkPanelStarIcon {
-	list-style-image: url("chrome://browser/skin/places/starred48.png");
-	width: 48px;
-	height: 48px;
+  list-style-image: url("chrome://browser/skin/places/starred48.png");
+  width: 48px;
+  height: 48px;
 }
 
 #editBookmarkPanelStarIcon[unstarred] {
-	list-style-image: url("chrome://browser/skin/places/unstarred48.png");
+  list-style-image: url("chrome://browser/skin/places/unstarred48.png");
 }
 
 #editBookmarkPanelTitle {
-	font-size: 130%;
+  font-size: 130%;
 }
 
 #editBookmarkPanelHeader,
 #editBookmarkPanelContent {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* Implements editBookmarkPanel resizing on folderTree un-collapse. */
 #editBMPanel_folderTree {
-	min-width: 27em;
+  min-width: 27em;
 }
 
 /* ********** END moved section ********** */
 
 #editBookmarkPanelContent {
-	min-width: 23em;
+  min-width: 23em;
 }
 
 #editBMPanel_folderTree {
-	margin-top: 2px;
-	margin-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 /* :::::::::: name picker :::::::::: */
@@ -90,65 +90,65 @@
 /* Make the microsummary picker look like a regular textbox instead of 
  * an editable menulist when no microsummaries are available. */
 #editBMPanel_namePicker[droppable="false"] {
-/*	-moz-appearance: textfield;*/ /* Normal editable menulists set this to "menulist". */
-	margin: 2px 4px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 4px;
-	box-shadow:
-		inset 0 1px 1px rgba(0, 0, 0, 0.68),
-		inset 2px 0 rgba(0, 0, 0, 0.08),
-		inset -2px 0 rgba(0, 0, 0, 0.08),
-		inset 0 -1px rgba(0, 0, 0, 0.15);
-	background: #fff none;
-	color: #000;
-	height: 21px;
-	cursor: text;
+/*  -moz-appearance: textfield;*/ /* Normal editable menulists set this to "menulist". */
+  margin: 2px 4px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 4px;
+  box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.68),
+    inset 2px 0 rgba(0, 0, 0, 0.08),
+    inset -2px 0 rgba(0, 0, 0, 0.08),
+    inset 0 -1px rgba(0, 0, 0, 0.15);
+  background: #fff none;
+  color: #000;
+  height: 21px;
+  cursor: text;
 }
 
 #editBMPanel_namePicker[droppable="false"] > .menulist-editable-box {
-	padding: 0;
-	background-image: none;
+  padding: 0;
+  background-image: none;
 }
 
 #editBMPanel_namePicker[droppable="false"] > .menulist-dropmarker,
 #editBMPanel_namePicker[droppable="false"] > menupopup {
-	display: none;
+  display: none;
 }
 
 /* :::::::::: folder menulist :::::::::: */
 
 .folder-icon > .menulist-label-box > .menulist-icon {
-	width: 16px;
-	height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .folder-icon > .menu-iconic-left {
-	display: -moz-box;
+  display: -moz-box;
 }
 
 .folder-icon {
-	list-style-image: url("chrome://browser/skin/places/bookmark-item.png") !important;
-	-moz-image-region: rect(16px, 16px, 32px, 0) !important;
+  list-style-image: url("chrome://browser/skin/places/bookmark-item.png") !important;
+  -moz-image-region: rect(16px, 16px, 32px, 0) !important;
 }
 
 /* ::::: bookmark panel dropdown icons ::::: */
 
 #editBMPanel_folderMenuList[selectedIndex="0"],
 #editBMPanel_toolbarFolderItem {
-	list-style-image: url("chrome://browser/skin/places/bookmarksToolbar.png") !important;
-	-moz-image-region: auto !important;
+  list-style-image: url("chrome://browser/skin/places/bookmarksToolbar.png") !important;
+  -moz-image-region: auto !important;
 }
 
 #editBMPanel_folderMenuList[selectedIndex="1"],
 #editBMPanel_bmRootItem {
-	list-style-image: url("chrome://browser/skin/places/bookmarksMenu.png") !important;
-	-moz-image-region: auto !important;
+  list-style-image: url("chrome://browser/skin/places/bookmarksMenu.png") !important;
+  -moz-image-region: auto !important;
 }
 
 #editBMPanel_folderMenuList[selectedIndex="2"],
 #editBMPanel_unfiledRootItem {
-	list-style-image: url("chrome://browser/skin/places/unsortedBookmarks.png") !important;
-	-moz-image-region: auto !important;
+  list-style-image: url("chrome://browser/skin/places/unsortedBookmarks.png") !important;
+  -moz-image-region: auto !important;
 }
 
 /* :::::::::: tags field :::::::::: */
@@ -157,43 +157,43 @@
  * This is so that only the tag being edited is shown in the popup.
  */
 #editBMPanel_tagsField #treecolAutoCompleteValue {
-	visibility: collapse;
+  visibility: collapse;
 }
 
 /* :::::::::: expanders :::::::::: */
 
 .expander-up,
 .expander-down {
-	-moz-margin-start: 0;
-	padding: 0;
-	width: 23px;
-	min-width: 0;
-	border: none;
-	box-shadow: none;
-	background: transparent;
+  -moz-margin-start: 0;
+  padding: 0;
+  width: 23px;
+  min-width: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .expander-up > hbox,
 .expander-down > hbox {
-	background: none;
+  background: none;
 }
 
 .expander-up {
-	list-style-image: url("chrome://browser/skin/places/expander-up.png");
+  list-style-image: url("chrome://browser/skin/places/expander-up.png");
 }
 
 .expander-up:hover,
 .expander-up:hover:active {
-	list-style-image: url("chrome://browser/skin/places/expander-up-active.png");
+  list-style-image: url("chrome://browser/skin/places/expander-up-active.png");
 }
 
 .expander-down {
-	list-style-image: url("chrome://browser/skin/places/expander-down.png");
+  list-style-image: url("chrome://browser/skin/places/expander-down.png");
 }
 
 .expander-down:hover,
 .expander-down:hover:active {
-	list-style-image: url("chrome://browser/skin/places/expander-down-active.png");
+  list-style-image: url("chrome://browser/skin/places/expander-down-active.png");
 }
 
 /* :::::::::: Popup Panel from URL-bar :::::::::: */
@@ -203,20 +203,20 @@
 
 popupset > #editBookmarkPanel #editBMPanel_namePicker[droppable="false"],
 popupset > #editBookmarkPanel textbox {
-	-moz-padding-start: 2px;
-	-moz-padding-end: 2px;
-	border-top: 2px solid;
-	-moz-border-top-colors: #7d7d7d #d4d4d4;
-	border-right: 2px solid;
-	-moz-border-right-colors: #c3c3c3 #ebebeb;
-	border-left: 2px solid;
-	-moz-border-left-colors: #c3c3c3 #ebebeb;
-	border-bottom: 1px solid #d9d9d9;
-	box-shadow: none;
+  -moz-padding-start: 2px;
+  -moz-padding-end: 2px;
+  border-top: 2px solid;
+  -moz-border-top-colors: #7d7d7d #d4d4d4;
+  border-right: 2px solid;
+  -moz-border-right-colors: #c3c3c3 #ebebeb;
+  border-left: 2px solid;
+  -moz-border-left-colors: #c3c3c3 #ebebeb;
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: none;
 }
 
 /* global/tree.css > .tree-imput を参照のこと */
 popupset > #editBookmarkPanel textbox.tree-input {
-	padding: 0;
-	min-height: 18px; /* "treechildren::-moz-tree-row" の高さと同じ */
+  padding: 0;
+  min-height: 18px; /* "treechildren::-moz-tree-row" の高さと同じ */
 }

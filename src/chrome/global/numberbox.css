@@ -45,15 +45,15 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 textbox[type="number"] {
-	margin-right: 18px;
-	padding: 0 !important;
-	cursor: default;
+  margin-right: 18px;
+  padding: 0 !important;
+  cursor: default;
 }
 
 html|*.numberbox-input {
-	text-align: right;
+  text-align: right;
 }
 
 .numberbox-input-box {
-	-moz-box-align: center;
+  -moz-box-align: center;
 }

@@ -47,31 +47,31 @@
 /* ::::: progressmeter ::::: */
 
 progressmeter {
-	margin: 2px 4px;
-	border-right: 1px solid rgba(0, 0, 0, .24);
-	border-left: 1px solid rgba(0, 0, 0, .24);
-	background: url("chrome://global/skin/progressmeter/progressbar.png") repeat-x top left;
-	min-width: 128px;
-	height: 11px;
+  margin: 2px 4px;
+  border-right: 1px solid rgba(0, 0, 0, .24);
+  border-left: 1px solid rgba(0, 0, 0, .24);
+  background: url("chrome://global/skin/progressmeter/progressbar.png") repeat-x top left;
+  min-width: 128px;
+  height: 11px;
 }
 
 /* macfoxII では指定されているが、Fx3.5 では指定なし。
    ソフトウェアの更新ダイアログで確認すると、これは無い方がいいみたい。*/
 /*progressmeter[mode="undetermined"] {
-	background: url("chrome://global/skin/progressmeter/chunks_ani.gif") no-repeat top left;
-	height: 10px;
+  background: url("chrome://global/skin/progressmeter/chunks_ani.gif") no-repeat top left;
+  height: 10px;
 }*/
 
 .progress-bar {
-	background: url("chrome://global/skin/progressmeter/chunks_ani.gif") repeat-x;
-	min-width: 0;
-	height: 10px;
+  background: url("chrome://global/skin/progressmeter/chunks_ani.gif") repeat-x;
+  min-width: 0;
+  height: 10px;
 }
 
 /* ::::: statusbar progressmeter ::::: */
 
 .progressmeter-statusbar {
-	margin: 0;
-	margin-bottom: 1px;
-	min-width: 96px;
+  margin: 0;
+  margin-bottom: 1px;
+  min-width: 96px;
 }

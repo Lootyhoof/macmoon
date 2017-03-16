@@ -25,29 +25,29 @@
 /* ::::: XBL bindings ::::: */
 
 /*radio {
-	-moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
 }*/
 
 tabbox > tabs > tab,
 .tab-bottom {
-	-moz-binding: url("chrome://global/skin/globalBindings.xml#tab");
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#tab");
 }
 
 menulist > menupopup,
 .menulist-menupopup {
-	-moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
+  -moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
 }
 
 .menulist-compact {
-	-moz-binding: url("chrome://global/skin/globalBindings.xml#menulist-compact");
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#menulist-compact");
 }
 
 progressmeter[mode="undetermined"] {
-	-moz-binding: url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined");
+  -moz-binding: url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined");
 }
 
 toolbarbutton[type="menu-button"] {
-	-moz-binding: url("chrome://global/skin/globalBindings.xml#menu-button");
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#menu-button");
 }
 
 /* ::::: root elements ::::: */
@@ -57,17 +57,17 @@ page,
 dialog,
 wizard,
 prefwindow {
-	-moz-appearance: window;
-	background-color: rgb(240, 240, 240);
+  -moz-appearance: window;
+  background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
-	color: #000;
-	font: 11px message-box, Tahoma, Arial, sans-serif;
+  color: #000;
+  font: 11px message-box, Tahoma, Arial, sans-serif;
 }
 
 /* deprecated */
 window.dialog {
-	padding: 8px;
+  padding: 8px;
 }
 
 /* ::::: alert icons :::::*/
@@ -76,34 +76,34 @@ window.dialog {
 .alert-icon,
 .error-icon,
 .question-icon {
-	width: 32px;
-	height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .message-icon {
-	list-style-image: url("chrome://global/skin/icons/Message.png");
+  list-style-image: url("chrome://global/skin/icons/Message.png");
 }
 
 .alert-icon {
-	list-style-image: url("chrome://global/skin/icons/Warning.png");
+  list-style-image: url("chrome://global/skin/icons/Warning.png");
 }
 
 .error-icon {
-	list-style-image: url("chrome://global/skin/icons/Error.png");
+  list-style-image: url("chrome://global/skin/icons/Error.png");
 }
 
 .question-icon {
-	list-style-image: url("chrome://global/skin/icons/Question.png");
+  list-style-image: url("chrome://global/skin/icons/Question.png");
 }
 
 /* ::::: iframe ::::: */
 
 iframe {
-	border: none;
-	width: 100px;
-	height: 100px;
-	min-width: 10px;
-	min-height: 10px;
+  border: none;
+  width: 100px;
+  height: 100px;
+  min-width: 10px;
+  min-height: 10px;
 }
 
 /* ::::: statusbar ::::: */
@@ -144,53 +144,53 @@ statusbarpanel:not(.statusbar-resizerpanel):-moz-lwtheme {
 }
 
 resizer[dir="bottomend"] {
-	-moz-appearance: none;
-	background: url("chrome://global/skin/basic/resizer.png") no-repeat bottom right;
-	width: 19px;
-	height: 18px;
+  -moz-appearance: none;
+  background: url("chrome://global/skin/basic/resizer.png") no-repeat bottom right;
+  width: 19px;
+  height: 18px;
 }
 
 .statusbarpanel-iconic,
 .statusbarpanel-iconic-text,
 .statusbarpanel-menu-iconic {
-	padding: 0 1px;
+  padding: 0 1px;
 }
 
 /* ::::: sidebar ::::: */
 
 #sidebar {
-	background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
 }
 
 sidebarheader {
-	border-bottom: 1px solid #a3a3a3;
-	background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid #a3a3a3;
+  background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
-	height: 25px;
+  height: 25px;
 }
 
 sidebarheader > label {
-	-moz-padding-start: 4px;
-	color: #000;
+  -moz-padding-start: 4px;
+  color: #000;
 }
 
 #sidebar-box .tabs-closebutton {
-	margin-bottom: 0;
-	padding: 0 4px;
-	background-color: transparent;
+  margin-bottom: 0;
+  padding: 0 4px;
+  background-color: transparent;
 }
 
 /* ::::: miscellaneous ::::: */
 
 menubar > menu:not(:-moz-lwtheme):-moz-window-inactive  {
-	color: GrayText;
+  color: GrayText;
 }
 
 .toolbar-focustarget {
-	-moz-user-focus: ignore !important;
+  -moz-user-focus: ignore !important;
 }
 
 /* ::::: miscellaneous formatting ::::: */
@@ -209,165 +209,165 @@ menubar > menu:not(:-moz-lwtheme):-moz-window-inactive  {
 }
 
 .inset {
-	border: 1px solid ThreeDShadow;
-	border-right-color: ThreeDHighlight;
-	border-bottom-color: ThreeDHighlight;
-	margin: 0 5px 5px;
+  border: 1px solid ThreeDShadow;
+  border-right-color: ThreeDHighlight;
+  border-bottom-color: ThreeDHighlight;
+  margin: 0 5px 5px;
 }
   
 .outset {
-	border: 1px solid ThreeDShadow;
-	border-top-color: ThreeDHighlight;
-	border-left-color: ThreeDHighlight;
+  border: 1px solid ThreeDShadow;
+  border-top-color: ThreeDHighlight;
+  border-left-color: ThreeDHighlight;
 }
 
 /* ... separators ... */
 
 separator:not([orient="vertical"]) {
-/*	height: 1.5em;*/
-	height: 10px;
+/*  height: 1.5em;*/
+  height: 10px;
 }
 
 separator[orient="vertical"] {
-/*	width: 1.5em;*/
-	width: 10px;
+/*  width: 1.5em;*/
+  width: 10px;
 }
 
 separator.thin:not([orient="vertical"]) {
-/*	height: 0.5em;*/
-	height: 4px;
+/*  height: 0.5em;*/
+  height: 4px;
 }  
 
 separator.thin[orient="vertical"] {
-/*	width: 0.5em;*/
-	width: 4px;
+/*  width: 0.5em;*/
+  width: 4px;
 }
 
 separator.groove:not([orient="vertical"]) {
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #fff;
-	height: 0;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  height: 0;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 separator.groove[orient="vertical"] {
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #fff;
-	width: 0;
-	margin-left: 0.4em;
-	margin-right: 0.4em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #fff;
+  width: 0;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
 }
 
 .small-margin {
-	margin: 1px 2px;
+  margin: 1px 2px;
 }
     
 .plain {
-	margin: 0 !important;
-	padding: 0;
-	border: none;
+  margin: 0 !important;
+  padding: 0;
+  border: none;
 }
 
 description,
 label {
-	cursor: default;
-	margin: 1px 5px 2px;
+  cursor: default;
+  margin: 1px 5px 2px;
 }
 
 description {
-	margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 label[disabled="true"] {
-	color: GrayText;
+  color: GrayText;
 }
 
 .tooltip-label {
-	margin: 0;
+  margin: 0;
 }
 
 .header {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .monospace {
-	font-family: monospace;
+  font-family: monospace;
 }
 
 .indent {
-	-moz-margin-start: 23px;
+  -moz-margin-start: 23px;
 }
 
 .box-padded {
-	padding: 5px;
+  padding: 5px;
 }
 
 .spaced {
-	margin: 3px 5px 4px;
+  margin: 3px 5px 4px;
 }
 
 .wizard-box {
-	padding: 20px 44px 10px;
+  padding: 20px 44px 10px;
 }
 
 .text-link {
-	border: 1px solid transparent;
-	color: blue/*-moz-nativehyperlinktext*/;
-	text-decoration: underline;
-	cursor: pointer;
+  border: 1px solid transparent;
+  color: blue/*-moz-nativehyperlinktext*/;
+  text-decoration: underline;
+  cursor: pointer;
 }
   
 .text-link:focus {
-/*	border: 1px dotted -moz-DialogText;*/
-	color: #000099;
+/*  border: 1px dotted -moz-DialogText;*/
+  color: #000099;
 }
   
 .text-link:hover:active {
-	color: red;
+  color: red;
 }
 
 .text-link[visited="true"] {
-	color: purple;
+  color: purple;
 }
 
 /* :::::: autoscroll popup ::::: */
 
 #autoscroller {
-	height: 28px;
-	width: 28px;
-	border: none;
-	margin: -14px;
-	padding: 0;
-	background-image: url("chrome://global/skin/icons/autoscroll.png");
-	background-color: transparent;
-	background-position: right top;
-	-moz-appearance: none;
+  height: 28px;
+  width: 28px;
+  border: none;
+  margin: -14px;
+  padding: 0;
+  background-image: url("chrome://global/skin/icons/autoscroll.png");
+  background-color: transparent;
+  background-position: right top;
+  -moz-appearance: none;
 }
 
 #autoscroller[scrolldir="NS"] {
-	background-position: right center;
+  background-position: right center;
 }
 
 #autoscroller[scrolldir="EW"] {
-	background-position: right bottom;
+  background-position: right bottom;
 }
 
 /* :::::::::: #certDetails (証明書ビューア) :::::::::: */
 
 #certDetails #certPrettyPrint tree + label {
-	margin-top: 4px;
+  margin-top: 4px;
 }
 
 #certDetails #certPrettyPrint textbox {
-	margin-top: 0;
-	margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* :::::::::: #aboutDialog (Mozilla Firefox について) :::::::::: */
 
 #aboutDialog #userAgent {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 /* :::::: Close button icons ::::: */

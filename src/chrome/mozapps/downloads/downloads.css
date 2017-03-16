@@ -1,46 +1,46 @@
 #downloadView {
-	-moz-appearance: none !important;
-	margin: 0;
-	border-bottom: 1px solid #a3a3a3;
+  -moz-appearance: none !important;
+  margin: 0;
+  border-bottom: 1px solid #a3a3a3;
 }
 
 #clearListButton {
-	margin: 5px;
+  margin: 5px;
 }
 
 /* :::::::::: Download Items :::::::::: */
 
 richlistitem[type="download"] {
-	padding: 4px 8px 4px 4px;
-	min-height: 46px;
-	border-bottom: 1px solid #c0c0c0;
+  padding: 4px 8px 4px 4px;
+  min-height: 46px;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 /*richlistitem[type="download"][selected="true"] {
-	background-image: url(chrome://mozapps/skin/extensions/itemEnabledFader.png);
+  background-image: url(chrome://mozapps/skin/extensions/itemEnabledFader.png);
 }*/
 
 richlistitem[type="download"] .name {
-	font-size: larger;
+  font-size: larger;
 }
 
 richlistitem[type="download"] .dateTime {
-	font-size: smaller;
+  font-size: smaller;
 }
 
 .blockedIcon {
-	list-style-image: url("chrome://global/skin/icons/Error.png");
+  list-style-image: url("chrome://global/skin/icons/Error.png");
 }
 
 /* prevent flickering when changing states */
 .downloadTypeIcon {
-	min-height: 32px;
-	min-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
 }
 
 #downloadView progressmeter {
-	margin-top: 2px;
-	margin-bottom: 3px;
+  margin-top: 2px;
+  margin-bottom: 3px;
 }
 
 /**

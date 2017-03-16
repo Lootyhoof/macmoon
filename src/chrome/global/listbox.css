@@ -48,132 +48,132 @@
 /* ::::: listbox ::::: */
 
 listbox {
-	margin: 0 4px;
-	border: 1px solid #a3a3a3;
-  	background-color: #fff;
-	color: #000;
+  margin: 0 4px;
+  border: 1px solid #a3a3a3;
+    background-color: #fff;
+  color: #000;
 }
 
 groupbox listbox {
-	border: 1px solid #c0c0c0;
+  border: 1px solid #c0c0c0;
 }
 
 listbox[disabled="true"] {
-	color: GrayText;
+  color: GrayText;
 }
 
 /* ::::: listitem ::::: */
 
 listitem {
-	border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 listitem[selected="true"] {
-	background-color: #dcdcdc;
-	color: #000;
+  background-color: #dcdcdc;
+  color: #000;
 }
 
 listbox:focus > listitem[selected="true"] {
-	background-color: #3d80df;
-	color: #fff;
+  background-color: #3d80df;
+  color: #fff;
 }
 
 /*listbox:focus > listitem[current="true"] {
-	outline: 1px dotted Highlight;
-	outline-offset: -1px;
+  outline: 1px dotted Highlight;
+  outline-offset: -1px;
 }
 
 listbox:focus > listitem[selected="true"][current="true"] {
-	outline: 1px dotted #F3D982;
+  outline: 1px dotted #F3D982;
 }*/
 
 /* ::::: listheader ::::: */ /* 確認できていないので、"treecol" と同じにしておく */
 
 listheader { 
-	-moz-box-align: center;
-	padding: 0 4px;
-	border-bottom:1px solid #a0a0a0;
-	box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
-	background: url("chrome://global/skin/tree/tree-header.png") repeat-x top left;
-	color: #000;
+  -moz-box-align: center;
+  padding: 0 4px;
+  border-bottom:1px solid #a0a0a0;
+  box-shadow: inset 1px 0 rgba(0, 0, 0, .25); /* border-left は border-bottom にかぶるので */
+  background: url("chrome://global/skin/tree/tree-header.png") repeat-x top left;
+  color: #000;
 }
 
 listheader[sortable="true"]:hover:active {
-	background: url("chrome://global/skin/tree/tree-header-active.png") repeat-x top left;
+  background: url("chrome://global/skin/tree/tree-header-active.png") repeat-x top left;
 }
 
 .listheader-icon {
-	-moz-margin-end: 2px;
+  -moz-margin-end: 2px;
 }
 
 .listheader-label {
-	margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* ..... sort direction icon ..... */
 
 .listheader-sortdirection {
-	list-style-image: none;
+  list-style-image: none;
 }
 
 .listheader-sortdirection[sortDirection="ascending"] {
-	list-style-image: url("chrome://global/skin/tree/sort-asc.png");
+  list-style-image: url("chrome://global/skin/tree/sort-asc.png");
 }
 
 /*.listheader-sortdirection[sortDirection="ascending"]:-moz-system-metric(windows-classic) {
-	list-style-image: url("chrome://global/skin/tree/sort-asc-classic.png");
+  list-style-image: url("chrome://global/skin/tree/sort-asc-classic.png");
 }*/
 
 .listheader-sortdirection[sortDirection="descending"] {
-	list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
+  list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
 }
 
 /*.listheader-sortdirection[sortDirection="descending"]:-moz-system-metric(windows-classic) {
-	list-style-image: url("chrome://global/skin/tree/sort-dsc-classic.png");
+  list-style-image: url("chrome://global/skin/tree/sort-dsc-classic.png");
 }*/
 
 /* ::::: listcell ::::: */ /* original からの変更なし */
 
 .listcell-label {
-	margin: 0px !important;
-	padding-top: 0px;
-	padding-bottom: 1px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 0px;
-	white-space: nowrap;
+  margin: 0px !important;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 0px;
+  white-space: nowrap;
 }
 
 .listcell-icon {
-	-moz-margin-end: 2px;
+  -moz-margin-end: 2px;
 }
 
 .listcell-label[disabled="true"] {
-	color: GrayText;
+  color: GrayText;
 }
 
 /* ::::: listcell checkbox ::::: */
 
 .listcell-check {
-/*	-moz-appearance: checkbox;*/
-	-moz-box-align: center;
-	margin: 0 2px;
-	background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
-	min-width: 18px;
-	min-height: 18px;
+/*  -moz-appearance: checkbox;*/
+  -moz-box-align: center;
+  margin: 0 2px;
+  background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .listcell-check[checked="true"] {
-	background: url("chrome://global/skin/checkbox/checkbox-on.png") no-repeat;
-	list-style-image: url("chrome://global/skin/checkbox/checkbox-check-mark.png");
+  background: url("chrome://global/skin/checkbox/checkbox-on.png") no-repeat;
+  list-style-image: url("chrome://global/skin/checkbox/checkbox-check-mark.png");
 }
 
 .listcell-check[disabled="true"] {
-	background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
-	opacity: .5;
+  background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
+  opacity: .5;
 }
 
 .listcell-check[disabled="true"][checked="true"] {
-	background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
-	list-style-image: url("chrome://global/skin/checkbox/checkbox-check-mark.png");
-	opacity: .5;
+  background: url("chrome://global/skin/checkbox/checkbox-off.png") no-repeat;
+  list-style-image: url("chrome://global/skin/checkbox/checkbox-check-mark.png");
+  opacity: .5;
 }

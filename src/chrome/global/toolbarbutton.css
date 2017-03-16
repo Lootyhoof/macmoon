@@ -11,138 +11,138 @@
 /* ::::: toolbarbutton ::::: */
 
 toolbarbutton {
-	-moz-box-align: center;
-	-moz-box-pack: center;
-	margin: 0;
-	padding: 4px 3px;
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 0;
+  padding: 4px 3px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
 }
 
 .toolbarbutton-icon[label]:not([label=""]) {
-	-moz-margin-end: 2px;
+  -moz-margin-end: 2px;
 }
 
 .toolbarbutton-text {
-	margin: 0 !important;
-	text-align: center;
+  margin: 0 !important;
+  text-align: center;
 }
 
 toolbarbutton.tabbable {
-	-moz-user-focus: normal !important;
+  -moz-user-focus: normal !important;
 }
 
 toolbarbutton:hover:not([disabled="true"]) {
-	border-right: 1px solid #c9c9c9;
-	border-left: 1px solid #c9c9c9;
-	background-color: #ededed;
+  border-right: 1px solid #c9c9c9;
+  border-left: 1px solid #c9c9c9;
+  background-color: #ededed;
 }
 
 toolbarbutton[open="true"]:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]) {
-	border-right: 1px solid #b9b9b9;
-	border-left: 1px solid #b9b9b9;
-	background-color: #ddd;
+  border-right: 1px solid #b9b9b9;
+  border-left: 1px solid #b9b9b9;
+  background-color: #ddd;
 }
 
 toolbarbutton[disabled="true"] {
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
-	color: GrayText;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
+  color: GrayText;
 }
 
 /* --- for Personas --- */
 
 toolbarbutton:hover:not([disabled="true"]):-moz-lwtheme {
-	border-right: 1px solid rgba(0, 0, 0, .1);
-	border-left: 1px solid rgba(0, 0, 0, .1);
-	background-color: rgba(0, 0, 0, .05);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .05);
 }
 
 toolbarbutton[open="true"]:not([disabled="true"]):-moz-lwtheme,
 toolbarbutton[checked="true"]:not([disabled="true"]):-moz-lwtheme {
-	border-right: 1px solid rgba(0, 0, 0, .12);
-	border-left: 1px solid rgba(0, 0, 0, .12);
-	background-color: rgba(0, 0, 0, .08);
+  border-right: 1px solid rgba(0, 0, 0, .12);
+  border-left: 1px solid rgba(0, 0, 0, .12);
+  background-color: rgba(0, 0, 0, .08);
 }
 
 toolbarbutton[disabled="true"]:-moz-lwtheme {
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
 }
 
 /* ::::: toolbarbutton menu ::::: */
 
 .toolbarbutton-menu-dropmarker {
-	margin: 0 !important;
-	-moz-padding-start: 3px;
-	border: none;
-	background-color: transparent;
-	list-style-image: url("chrome://global/skin/arrow/dropmarker.png");
-	width: auto;
+  margin: 0 !important;
+  -moz-padding-start: 3px;
+  border: none;
+  background-color: transparent;
+  list-style-image: url("chrome://global/skin/arrow/dropmarker.png");
+  width: auto;
 }
 
 .toolbarbutton-menu-dropmarker[disabled="true"] {
-	list-style-image: url("chrome://global/skin/arrow/dropmarker-dis.png");
+  list-style-image: url("chrome://global/skin/arrow/dropmarker-dis.png");
 }
 
 /* ::::: toolbarbutton menu-button ::::: */
 
 toolbarbutton[type="menu-button"] {
-	-moz-box-align: stretch;
-	-moz-box-orient: horizontal !important;
-	padding: 0 !important;
-	border: none !important;
-	background-color: transparent !important;
+  -moz-box-align: stretch;
+  -moz-box-orient: horizontal !important;
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 /* .....inner button ..... */
 
 .toolbarbutton-menubutton-button {
-	-moz-box-align: center;
-	-moz-box-pack: center;
-	-moz-box-orient: vertical;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
 }
 
 toolbarbutton[type="menu-button"]:hover:not([disabled="true"]) > .toolbarbutton-menubutton-button {
-	border-right: 1px solid #c9c9c9;
-	border-left: 1px solid #c9c9c9;
-	background-color: #ededed;
+  border-right: 1px solid #c9c9c9;
+  border-left: 1px solid #c9c9c9;
+  background-color: #ededed;
 }
 
 toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]) > .toolbarbutton-menubutton-button {
-	border-right: 1px solid #b9b9b9;
-	border-left: 1px solid #b9b9b9;
-	background-color: #ddd;
+  border-right: 1px solid #b9b9b9;
+  border-left: 1px solid #b9b9b9;
+  background-color: #ddd;
 }
 
 toolbarbutton[type="menu-button"][disabled="true"] > .toolbarbutton-menubutton-button {
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
 }
 
 /* --- for Personas --- */
 
 toolbarbutton[type="menu-button"]:hover:not([disabled="true"]):-moz-lwtheme > .toolbarbutton-menubutton-button {
-	border-right: 1px solid rgba(0, 0, 0, .1);
-	border-left: 1px solid rgba(0, 0, 0, .1);
-	background-color: rgba(0, 0, 0, .05);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .05);
 }
 
 toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]):-moz-lwtheme > .toolbarbutton-menubutton-button {
-	border-right: 1px solid rgba(0, 0, 0, .12);
-	border-left: 1px solid rgba(0, 0, 0, .12);
-	background-color: rgba(0, 0, 0, .08);
+  border-right: 1px solid rgba(0, 0, 0, .12);
+  border-left: 1px solid rgba(0, 0, 0, .12);
+  background-color: rgba(0, 0, 0, .08);
 }
 
 toolbarbutton[type="menu-button"][disabled="true"]:-moz-lwtheme > .toolbarbutton-menubutton-button {
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
 }
 
 /* ::::: toolbarbutton badged ::::: */
@@ -197,58 +197,58 @@ toolbar[mode="icons"] > *|* > .toolbarbutton-badge:-moz-locale-dir(rtl)::after {
 /* ..... dropmarker ..... */
 
 .toolbarbutton-menubutton-dropmarker {
-	padding: 2px;
-	border: none;
-	border-right: 1px solid transparent;
-	background-color: transparent;
-	list-style-image: url("chrome://global/skin/arrow/dropmarker.png");
-	width: auto;
+  padding: 2px;
+  border: none;
+  border-right: 1px solid transparent;
+  background-color: transparent;
+  list-style-image: url("chrome://global/skin/arrow/dropmarker.png");
+  width: auto;
 }
 
 .toolbarbutton-menubutton-dropmarker[disabled="true"] {
-	list-style-image: url("chrome://global/skin/arrow/dropmarker-dis.png");
+  list-style-image: url("chrome://global/skin/arrow/dropmarker-dis.png");
 }
 
 toolbarbutton[type="menu-button"]:hover:not([open]):not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker[buttonover] {
-	border-right: 1px solid #c9c9c9;
-	background-color: transparent;
+  border-right: 1px solid #c9c9c9;
+  background-color: transparent;
 }
 
 toolbarbutton[type="menu-button"]:hover:not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid #c9c9c9;
-	background-color: #ededed;
+  border-right: 1px solid #c9c9c9;
+  background-color: #ededed;
 }
 
 toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]) > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid #b9b9b9;
-	background-color: #ddd;
+  border-right: 1px solid #b9b9b9;
+  background-color: #ddd;
 }
 
 toolbarbutton[type="menu-button"][disabled="true"] > .toolbarbutton-menubutton-dropmarker[buttonover],
 toolbarbutton[type="menu-button"][disabled="true"] > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid transparent;
-	background-color: transparent;
+  border-right: 1px solid transparent;
+  background-color: transparent;
 }
 
 /* --- for Personas --- */
 
 toolbarbutton[type="menu-button"]:hover:not([open]):not([disabled="true"]):-moz-lwtheme > .toolbarbutton-menubutton-dropmarker[buttonover] {
-	border-right: 1px solid rgba(0, 0, 0, .1);
-	background-color: transparent;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  background-color: transparent;
 }
 
 toolbarbutton[type="menu-button"]:hover:not([disabled="true"]):-moz-lwtheme > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid rgba(0, 0, 0, .1);
-	background-color: rgba(0, 0, 0, .05);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .05);
 }
 
 toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]):-moz-lwtheme > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid rgba(0, 0, 0, .12);
-	background-color: rgba(0, 0, 0, .08);
+  border-right: 1px solid rgba(0, 0, 0, .12);
+  background-color: rgba(0, 0, 0, .08);
 }
 
 toolbarbutton[type="menu-button"][disabled="true"]:-moz-lwtheme > .toolbarbutton-menubutton-dropmarker[buttonover],
 toolbarbutton[type="menu-button"][disabled="true"]:-moz-lwtheme > .toolbarbutton-menubutton-dropmarker {
-	border-right: 1px solid transparent;
-	background-color: transparent;
+  border-right: 1px solid transparent;
+  background-color: transparent;
 }

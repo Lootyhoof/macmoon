@@ -14,96 +14,96 @@
 /* :::::::::: Toolbar :::::::::: */
 
 #placesToolbar {
-	padding: 0 3px;
+  padding: 0 3px;
 }
 
 /* ...... back & forward buttons ..... */
 
 #back-button,
 #forward-button {
-	padding: 0 3px;
-	border: none;
-	background-color: transparent;
-	list-style-image: url("chrome://browser/skin/Toolbar-24.png");
+  padding: 0 3px;
+  border: none;
+  background-color: transparent;
+  list-style-image: url("chrome://browser/skin/Toolbar-24.png");
 }
 
 #placesToolbar > toolbarbutton > image,
 #placesToolbar > toolbarbutton > label {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #back-button,
 #forward-button[chromedir="rtl"] {  
-	-moz-image-region: rect(0px, 24px, 24px, 0px);
+  -moz-image-region: rect(0px, 24px, 24px, 0px);
 }
 
 #back-button:not([disabled="true"]):hover,
 #forward-button:not([disabled="true"]):hover[chromedir="rtl"] {
-	-moz-image-region: rect(24px, 24px, 48px, 0px);
+  -moz-image-region: rect(24px, 24px, 48px, 0px);
 }
 
 #back-button[disabled="true"],
 #forward-button[chromedir="rtl"][disabled="true"] {
-	-moz-image-region: rect(48px, 24px, 72px, 0px);
+  -moz-image-region: rect(48px, 24px, 72px, 0px);
 }
 
 #forward-button,
 #back-button[chromedir="rtl"] {
-	-moz-image-region: rect(0px, 48px, 24px, 24px);
+  -moz-image-region: rect(0px, 48px, 24px, 24px);
 }
 
 #forward-button:not([disabled="true"]):hover,
 #back-button:not([disabled="true"]):hover[chromedir="rtl"] {
-	-moz-image-region: rect(24px, 48px, 48px, 24px);
+  -moz-image-region: rect(24px, 48px, 48px, 24px);
 }
 
 #forward-button[disabled="true"],
 #back-button[chromedir="rtl"][disabled="true"] {
-	-moz-image-region: rect(48px, 48px, 72px, 24px);
+  -moz-image-region: rect(48px, 48px, 72px, 24px);
 }
 
 /* ..... Menu ..... */
 
 #placesMenu {
-	-moz-margin-start: 2px;
-	border: none;
+  -moz-margin-start: 2px;
+  border: none;
 }
 
 #placesMenu > menu {
-	padding-top: 6px;
-	padding-bottom: 5px;
-	-moz-padding-start: 4px;
-	border-top: none;
-	border-bottom: none;
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	background-color: transparent;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  -moz-padding-start: 4px;
+  border-top: none;
+  border-bottom: none;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: transparent;
 }
 
 #placesMenu > menu:hover {
-	border-right: 1px solid #c9c9c9;
-	border-left: 1px solid #c9c9c9;
-	background-color: #ededed;
-	color: #000;
+  border-right: 1px solid #c9c9c9;
+  border-left: 1px solid #c9c9c9;
+  background-color: #ededed;
+  color: #000;
 }
 
 #placesMenu > menu[open="true"] {
     border-right: 1px solid #b9b9b9;
     border-left: 1px solid #b9b9b9;
-	background-color: #ddd;
-	color: #000;
+  background-color: #ddd;
+  color: #000;
 }
 
 #placesMenu > menu > label {
-	-moz-margin-start: 2px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
-	-moz-margin-end: 4px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
-	-moz-padding-end: 8px; /* これによって、dropmarker が label と重ならずに表示される。*/
-	background: url("chrome://global/skin/arrow/dropmarker.png") no-repeat right center;
+  -moz-margin-start: 2px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
+  -moz-margin-end: 4px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
+  -moz-padding-end: 8px; /* これによって、dropmarker が label と重ならずに表示される。*/
+  background: url("chrome://global/skin/arrow/dropmarker.png") no-repeat right center;
 }
 
 #placesMenu[chromedir="rtl"] > menu > label {
-	background-position: left center;
+  background-position: left center;
 }
 
 /* ..... organize, view and maintenance buttons icons ..... */
@@ -111,53 +111,53 @@
 #organizeButton, 
 #viewMenu, 
 #maintenanceButton {
-	list-style-image: url("chrome://browser/skin/places/libraryToolbar.png");
+  list-style-image: url("chrome://browser/skin/places/libraryToolbar.png");
 }
 
 #organizeButton {
-	-moz-image-region: rect(0px, 16px, 16px, 0px);
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 
 #organizeButton:hover,
 #organizeButton[open="true"] {
-	-moz-image-region: rect(16px, 16px, 32px, 0px);
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
 }
 
 #viewMenu {
-	-moz-image-region: rect(0px, 32px, 16px, 16px);
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
 }
 
 #viewMenu:hover,
 #viewMenu[open="true"] {
-	-moz-image-region: rect(16px, 32px, 32px, 16px);
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
 }
 
 #maintenanceButton {
-	-moz-image-region: rect(0px, 48px, 16px, 32px);
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 
 #maintenanceButton:hover,
 #maintenanceButton[open="true"] {
-	-moz-image-region: rect(16px, 48px, 32px, 32px);
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
 }
 
 /* :::::::::: Root View :::::::::: */
 
 #placesList,
 #placeContent {
-	-moz-appearance: none;
-	margin: 0;
-	padding: 0;
-	border: none;
+  -moz-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 #detailsDeck {
-	border-top: 1px solid #a3a3a3;
-	padding: 5px;
+  border-top: 1px solid #a3a3a3;
+  padding: 5px;
 }
 
 #infoBoxExpanderLabel {
-	-moz-padding-start: 2px;
+  -moz-padding-start: 2px;
 }
 
 /**
@@ -176,21 +176,21 @@
 /* .....Scopebar ..... */
 
 #organizerScopeBar {
-	padding: 2px 0;
-	-moz-padding-end: 3px;
+  padding: 2px 0;
+  -moz-padding-end: 3px;
 }
 
 #organizerScopeBar > toolbarbutton {
-	margin: 0 1px;
-	padding: 0;
-	border: 1px solid transparent;
-	border-radius: 2px;
+  margin: 0 1px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 2px;
 }
 
 #organizerScopeBar > toolbarbutton > label,
 #organizerScopeBar > toolbarbutton > image {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #organizerScopeBar .toolbarbutton-text {
@@ -199,17 +199,17 @@
 }
 
 #organizerScopeBar > toolbarbutton:not([disabled="true"]):not([checked="true"]):hover {
-/*	border-color: ThreeDShadow;*/
-	border-color: #c9c9c9;
+/*  border-color: ThreeDShadow;*/
+  border-color: #c9c9c9;
 }
 
 #organizerScopeBar > toolbarbutton[checked="true"] {
-/*	border-color: ThreeDDarkShadow !important;*/
-	border-color: #b9b9b9 !important;
+/*  border-color: ThreeDDarkShadow !important;*/
+  border-color: #b9b9b9 !important;
 }
 
 .small,
 .small[disabled="true"] {
-	margin: 0;  
-	min-width: 0;
+  margin: 0;  
+  min-width: 0;
 }

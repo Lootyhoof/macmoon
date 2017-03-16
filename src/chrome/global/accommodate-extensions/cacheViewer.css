@@ -10,32 +10,32 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #cacheviewer #v-splitter {
-	border-right: 1px solid #a3a3a3;
-	border-left: 1px solid #a3a3a3;
-	min-width: 9px;
+  border-right: 1px solid #a3a3a3;
+  border-left: 1px solid #a3a3a3;
+  min-width: 9px;
 }
 
 #cacheviewer #h-splitter {
-	margin: 0;
-	border-top: 1px solid #a3a3a3;
-	border-bottom: 1px solid #a3a3a3;
-	border-right: none;
-	border-left: none;
-	min-height: 9px;
+  margin: 0;
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+  border-right: none;
+  border-left: none;
+  min-height: 9px;
 }
 
 #cacheviewer #cacheInfo {
-	margin: 6px 6px 4px;
-	padding: 3px 4px 2px;
+  margin: 6px 6px 4px;
+  padding: 3px 4px 2px;
 }
 
 #cacheviewer #cacheTree {
-	margin: 0;
-	border: none;
+  margin: 0;
+  border: none;
 }
 
 /* font-size によって左右の border がはみ出る */
 #cacheviewer > statusbar progressmeter {
-	margin-top: 3px;
-	margin-bottom: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }

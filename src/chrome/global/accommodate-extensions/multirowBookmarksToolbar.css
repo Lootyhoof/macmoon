@@ -11,12 +11,12 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #personal-bookmarks[multi] #bookmarksBarContent toolbarbutton.bookmark-item {
-	padding: 0 7px !important;
-	min-height:16px;
-	/* Fx3.6 で menu とそうでないのとで位置が合わない(Tahoma, Arial)。Lucida Grande は問題ないみたい。
-	   アイコンを表示させるか、フォントサイズを12pxにすることで解消するんだけど... */
+  padding: 0 7px !important;
+  min-height:16px;
+  /* Fx3.6 で menu とそうでないのとで位置が合わない(Tahoma, Arial)。Lucida Grande は問題ないみたい。
+     アイコンを表示させるか、フォントサイズを12pxにすることで解消するんだけど... */
 }
 
 #personal-bookmarks[multi] toolbarbutton.bookmark-item[dragover][open] {
-	-moz-appearance: none !important;
+  -moz-appearance: none !important;
 }

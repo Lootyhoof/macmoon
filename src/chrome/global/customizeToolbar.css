@@ -46,22 +46,22 @@
 
 window/*,
 dialog*/ {
-	padding: 10px 6px 8px;
+  padding: 10px 6px 8px;
 }
 
 #instructions {
-	font-weight: bold;
-	font-size: larger;
+  font-weight: bold;
+  font-size: larger;
 }
 
 #palette-box {
-	margin: 2px 4px 6px;
-/*	border: 1px solid #a3a3a3;*/
-	border: 1px solid;
-	border-color: #a0a0a0 #c0c0c0 #d0d0d0;
-	box-shadow:
-		inset 0 2px rgba(0, 0, 0, .05),
-		inset 1px 0 rgba(0, 0, 0, .01),
-		inset -1px 0 rgba(0, 0, 0, .01);
-	background-color: rgba(0, 0, 0, .03);
+  margin: 2px 4px 6px;
+/*  border: 1px solid #a3a3a3;*/
+  border: 1px solid;
+  border-color: #a0a0a0 #c0c0c0 #d0d0d0;
+  box-shadow:
+    inset 0 2px rgba(0, 0, 0, .05),
+    inset 1px 0 rgba(0, 0, 0, .01),
+    inset -1px 0 rgba(0, 0, 0, .01);
+  background-color: rgba(0, 0, 0, .03);
 }

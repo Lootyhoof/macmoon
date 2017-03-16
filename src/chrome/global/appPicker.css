@@ -29,7 +29,7 @@
 }
 
 #app-picker-list {
-	border: 1px solid #a3a3a3;
+  border: 1px solid #a3a3a3;
     height:225px;
     min-height:225px;
 }
@@ -40,7 +40,7 @@
 }
 
 #app-picker-item-image {
-	-moz-margin-start: 5px;
+  -moz-margin-start: 5px;
 }
 
 #app-picker-item-cell {

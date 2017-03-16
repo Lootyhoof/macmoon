@@ -12,33 +12,33 @@
 
 #Console2Window #ToolbarMode toolbarbutton,
 #Console2Window #ToolbarExt toolbarbutton {
-	margin: 0 1px;
+  margin: 0 1px;
 }
 
 #Console2Window #TextboxFilter {
-	margin-top: 3px !important;
-	margin-bottom: 3px !important;
-	-moz-margin-end: 4px !important;
-	-moz-padding-start: 6px;
-	border-radius: 9.5pt;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  -moz-margin-end: 4px !important;
+  -moz-padding-start: 6px;
+  border-radius: 9.5pt;
 }
 
 #Console2Window #TextboxFilter .textbox-search-icons {
-	margin-top: 1px;
+  margin-top: 1px;
 }
 
 #Console2Window #TextboxEval {
-	margin: 3px 4px !important;
+  margin: 3px 4px !important;
 }
 
 #Console2Window #ButtonEval {
-	-moz-margin-end: 1px !important;
+  -moz-margin-end: 1px !important;
 }
 
 #Console2Window #ConsoleBox {
-	margin: 0;
+  margin: 0;
 }
 
 #Console2Window .console-row {
-	padding: 4px;
+  padding: 4px;
 }

@@ -46,47 +46,47 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 richlistbox {
-	-moz-appearance: none; /* 必要! これがないと、Fx3.5とFx3.6で表示が異なる */
-	margin: 2px 4px;
-	background-color: #fff;
-	color: #000;
+  -moz-appearance: none; /* 必要! これがないと、Fx3.5とFx3.6で表示が異なる */
+  margin: 2px 4px;
+  background-color: #fff;
+  color: #000;
 }
 
 richlistbox[disabled="true"] {
-	color: GrayText;
+  color: GrayText;
 }
 
 /* あちらこちらで見かけるものなので、ここで指定してしまえば一度で済むかとも思ったんだけど、
  * URL-bar からの popup など、弊害もあるらしいので、ここでは指定せずに、その都度指定していくのが無難? */
 /*richlistitem {
-	padding-top: 6px;
-	padding-bottom: 6px;
-	-moz-padding-start: 7px;
-	-moz-padding-end: 7px;
-	border-bottom: 1px dotted #c0c0c0;
-	min-height: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -moz-padding-start: 7px;
+  -moz-padding-end: 7px;
+  border-bottom: 1px dotted #c0c0c0;
+  min-height: 25px;
 }*/
 
 richlistitem[selected="true"] {
-	background-color: #e8e8ee;
-	color: #000;
+  background-color: #e8e8ee;
+  color: #000;
 }
 
 richlistbox:focus > richlistitem[selected="true"] {
-	background: #e8e8ee url("chrome://global/skin/richlistbox/item-enabled-fader.png") repeat-x top left;
+  background: #e8e8ee url("chrome://global/skin/richlistbox/item-enabled-fader.png") repeat-x top left;
 }
 
 richlistbox:focus > richlistitem[selected="true"][isDisabled="true"] {
-	background: #fafaff url("chrome://global/skin/richlistbox/item-disabled-fader.png") repeat-x top left;
+  background: #fafaff url("chrome://global/skin/richlistbox/item-disabled-fader.png") repeat-x top left;
 }
 
 /* ダウンロードマネージャー以外では未確認 */
 
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"] {
-/*	outline: 1px dotted Highlight;
-	outline-offset: -1px;*/
+/*  outline: 1px dotted Highlight;
+  outline-offset: -1px;*/
 }
 
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"][selected="true"] {
-/*	outline: 1px dotted #F3D982;*/ /* TODO: find a suitable system color */
+/*  outline: 1px dotted #F3D982;*/ /* TODO: find a suitable system color */
 }

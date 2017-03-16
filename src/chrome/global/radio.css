@@ -47,72 +47,72 @@
 /* ::::: radio ::::: */
 
 radio {
-	-moz-box-align: center;
-	margin: 2px 4px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 2px;
+  -moz-box-align: center;
+  margin: 2px 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 2px;
 }
 
 .radio-label-box {
-	-moz-margin-start: 2px;
-	padding: 0 1px;
-	border: 1px solid transparent;
+  -moz-margin-start: 2px;
+  padding: 0 1px;
+  border: 1px solid transparent;
 }
 
 .radio-icon {
-	-moz-margin-end: 2px;
+  -moz-margin-end: 2px;
 }
 
 .radio-label {
-	margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* ..... focused state ..... */
 
 /*radio[focused="true"] > .radio-label-box {
-	border: 1px dotted ThreeDDarkShadow;
+  border: 1px dotted ThreeDDarkShadow;
 }*/
 
 /* ..... disabled state ..... */
 
 radio[disabled="true"] {
-	color: GrayText;
+  color: GrayText;
 }
 
 /* ::::: radio & checkmark image ::::: */
 
 .radio-check {
-	background: url("chrome://global/skin/radio/radio-off.png") no-repeat;
-	list-style-image: none;
-	width: 18px;
-	height: 18px;
+  background: url("chrome://global/skin/radio/radio-off.png") no-repeat;
+  list-style-image: none;
+  width: 18px;
+  height: 18px;
 }
 
 /* ..... selected state ..... */
 
 radio[selected="true"] > .radio-check {
-	background-image: url("chrome://global/skin/radio/radio-on.png");
-	list-style-image: url("chrome://global/skin/radio/radio-check-mark.png");
+  background-image: url("chrome://global/skin/radio/radio-on.png");
+  list-style-image: url("chrome://global/skin/radio/radio-check-mark.png");
 }
 
 /* ..... disabled state ..... */
 
 radio[disabled="true"] > .radio-check {
-	background-image: url("chrome://global/skin/radio/radio-off.png");
-	opacity: .5;
+  background-image: url("chrome://global/skin/radio/radio-off.png");
+  opacity: .5;
 }
 
 /* XXX Hack to work around bug 458231 */ /* よく理解していないけど、とりあえず無効化 */
 
 /*radio:-moz-system-metric(windows-classic) {
-	text-shadow: 1px 1px transparent;
+  text-shadow: 1px 1px transparent;
 }
 radio:-moz-system-metric(windows-classic) > .radio-label-box > .radio-label {
-	margin-bottom: -2px !important;
+  margin-bottom: -2px !important;
 }
 radio[disabled="true"]:-moz-system-metric(windows-classic) {
-	color: ThreeDShadow;
-	text-shadow: 1px 1px ThreeDHighlight;
+  color: ThreeDShadow;
+  text-shadow: 1px 1px ThreeDHighlight;
 }*/

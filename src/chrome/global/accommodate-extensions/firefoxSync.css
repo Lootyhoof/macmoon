@@ -15,19 +15,19 @@
 }*/
 
 wizard[windowtype="Weave:AccountSetup"] .wizard-header-icon {
-	-moz-margin-end: 5px;
-	max-width: 32px;
-	max-height: 32px;
+  -moz-margin-end: 5px;
+  max-width: 32px;
+  max-height: 32px;
 }
 
 .accountChoiceButton,
 .mergeChoiceButton {
-	margin: 1px 15px 2px;
-	background-image: none;
+  margin: 1px 15px 2px;
+  background-image: none;
 }
 
 .accountChoiceButton > .button-box,
 .mergeChoiceButton > .button-box {
-	background-image: none;
-	min-height: 5em;
+  background-image: none;
+  min-height: 5em;
 }

@@ -34,12 +34,12 @@ textbox[empty="true"] {
 
 html|*.textbox-input, 
 html|*.textbox-textarea {
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-	background-color: inherit;
-	color: inherit;
-	font: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
 }
 
 /* ..... focused state ..... */
@@ -96,35 +96,35 @@ textbox[type=search][focused="true"]  {
 }
 
 .textbox-search-icon {
-	list-style-image: url("chrome://global/skin/icons/textbox-search.png");
-	-moz-image-region: rect(0, 16px, 16px, 0);
+  list-style-image: url("chrome://global/skin/icons/textbox-search.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 /*.textbox-search-icon[chromedir="rtl"] {
-	list-style-image: url("chrome://global/skin/icons/Search-glass-rtl.png");
+  list-style-image: url("chrome://global/skin/icons/Search-glass-rtl.png");
 }*/
 
 .textbox-search-clear {
-	list-style-image: url("chrome://global/skin/icons/textbox-search-clear.png");
-	-moz-image-region: rect(0, 16px, 16px, 0);
+  list-style-image: url("chrome://global/skin/icons/textbox-search-clear.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 .textbox-search-clear:not([disabled]):hover ,
 .textbox-search-icon[searchbutton]:not([disabled]):hover {
-	-moz-image-region: rect(0, 32px, 16px, 16px);
+  -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
 .textbox-search-clear:not([disabled]):hover:active ,
 .textbox-search-icon[searchbutton]:not([disabled]):hover:active {
-	-moz-image-region: rect(0, 48px, 16px, 32px);
+  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 .textbox-search-icon[searchbutton]:not([disabled]) {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .textbox-search-clear:not([disabled]) {
-	cursor: default;
+  cursor: default;
 }
 
 /* ::::: textboxes inside toolbarpaletteitems ::::: */
@@ -139,7 +139,7 @@ textbox html|*.textbox-input::-moz-placeholder {
   color: grey;
 }
 
-textbox html|*.textbox-input:-moz-placeholder {     	/* à supprimer qd on sera à TB24 */
+textbox html|*.textbox-input:-moz-placeholder {       /* à supprimer qd on sera à TB24 */
   font-style: italic;
   opacity: 1; 
   color: grey;

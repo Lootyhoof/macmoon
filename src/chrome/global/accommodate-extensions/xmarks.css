@@ -11,5 +11,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #foxmarks-settings .paneSelector radio {
-	border: none !important;
+  border: none !important;
 }
