@@ -1231,23 +1231,6 @@ toolbar[iconsize="small"] #fullscreen-button[checked="true"]*/ {
   padding: 0;
 }
 
-/* download status button */
-#status4evar-download-button #status4evar-download-icon,
-#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-24.png"),
-                              0, 144, 24, 120) center no-repeat !important;
-  width:24px;
-  height:24px;
-}
-
-toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-icon,
-toolbar[iconsize="small"] #status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-16.png"),
-                              0, 96, 16, 80) center no-repeat !important;
-  width:16px;
-  height:16px;
-}
-
 /* sync button */
 
 #sync-button {
