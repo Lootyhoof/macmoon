@@ -277,8 +277,7 @@
 /* ----- BOOKMARK TOOLBAR ----- */
 
 #PersonalToolbar {
-  -moz-border-image: url("chrome://browser/skin/personaltoolbar/bookmark-toolbar-border.png") 1 / 0 0 1px 0;
-  background: url("chrome://browser/skin/personaltoolbar/bookmark-toolbar-bkg.png");
+  border-bottom: 1px solid rgb(163, 163, 163) !important;
 }
 
 #PersonalToolbar .bookmarks-toolbar-items {
@@ -287,8 +286,7 @@
 
 /* --- for Personas --- */
 #PersonalToolbar:-moz-lwtheme {
-  -moz-border-image: url("chrome://browser/skin/personaltoolbar/bookmark-toolbar-border-persona.png") 1 / 0 0 1px 0;
-  background: url("chrome://browser/skin/personaltoolbar/bookmark-toolbar-bkg-persona.png");
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
 /* :::::::::: bookmark buttons :::::::::: */
