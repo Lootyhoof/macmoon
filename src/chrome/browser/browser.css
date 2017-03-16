@@ -364,6 +364,10 @@ toolbarbutton.bookmark-item > .toolbarbutton-menu-dropmarker {
   list-style-image: url("chrome://browser/skin/personaltoolbar/folderarrow.png");
 }
 
+toolbar[brighttext] toolbarbutton.bookmark-item:not([livemark]) > .toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://browser/skin/personaltoolbar/folderarrow-hover.png");
+}
+
 toolbarbutton.bookmark-item:hover > .toolbarbutton-menu-dropmarker,
 toolbarbutton.bookmark-item[open] > .toolbarbutton-menu-dropmarker  {
   list-style-image: url("chrome://browser/skin/personaltoolbar/folderarrow-hover.png");
