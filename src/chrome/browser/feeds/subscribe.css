@@ -20,7 +20,7 @@ html {
 #feedBody {
   margin: 2em auto;
   padding: 3em;
-  border: 1px solid THreeDShadow;
+  border: 1px solid ThreeDShadow;
   -moz-padding-start: 30px;
   box-shadow:
     0 0 1px rgba(0, 0, 0, .2),
