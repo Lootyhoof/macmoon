@@ -65,6 +65,15 @@ prefwindow {
   font: 11px message-box, Tahoma, Arial, sans-serif;
 }
 
+window:-moz-lwtheme,
+page:-moz-lwtheme,
+dialog:-moz-lwtheme,
+wizard:-moz-lwtheme,
+prefwindow:-moz-lwtheme {
+  background: transparent;
+  background-size: auto;
+}
+
 /* deprecated */
 window.dialog {
   padding: 8px;
