@@ -1,5 +1,24 @@
 # Changelog
 
+### 2.0.0
+- refactor tabs to modern standards
+- render background stylings in CSS rather than PNGs
+- replace deprecated stylings
+- improve findbar appearance
+- improve page info appearance
+- persona mode improvements
+- use more theme-native download indicator icon
+- fix download animation
+- improve appearance of places downloads pane
+- improve downloads panel appearance
+- sync plugins stylings with default
+- sync devtools stylings with default
+- sync cert error page with default
+- allow extensions to style their own toolbarbutton-badge
+- add switch to tab icon
+- fix tab close icon mappings
+- cleanup of redundant files/stylings
+
 ### 1.5.0
 - support PM27's devtools
 - drop PM26 support
