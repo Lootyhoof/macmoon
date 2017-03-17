@@ -1573,7 +1573,8 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-text {
   font-size: inherit;
 }
 
-.ac-url-text {
+.ac-url-text,
+.ac-action-text {
   color: -moz-nativehyperlinktext;
 }
 
@@ -1581,8 +1582,19 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-text {
   color: GrayText;
 }
 
+richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-icon {
+  list-style-image: url("chrome://browser/skin/actionicon-tab.png");
+  -moz-image-region: rect(0, 16px, 11px, 0);
+  padding: 0 3px;
+}
+
+richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box > .ac-action-icon {
+  -moz-image-region: rect(11px, 16px, 22px, 0);
+}
+
 .ac-comment[selected="true"],
-.ac-url-text[selected="true"] {
+.ac-url-text[selected="true"],
+.ac-action-text[selected="true"] {
   color: inherit !important;
 }
 
