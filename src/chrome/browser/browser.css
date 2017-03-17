@@ -1918,25 +1918,28 @@ tabpanels {
   margin: 0;
   padding: 2px 0 0;
   border: none;
-  background-color:transparent;
+  background-color: transparent;
+}
+
+.tabbrowser-tab:not([selected="true"]) > * > * > .tab-close-button {
   -moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 
-.tabbrowser-tab[selected="true"] > .tab-close-button {
+.tabbrowser-tab[selected="true"] > * > * > .tab-close-button {
   -moz-image-region: rect(0px, 16px, 16px, 0px);
   /* Make this button focusable so clicking on it will not focus the tab while it's getting closed */
   -moz-user-focus: normal;
 }
 
-.tabbrowser-tab:hover > .tab-close-button {
+.tabbrowser-tab:hover > * > * > .tab-close-button {
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 
-.tabbrowser-tab:hover > .tab-close-button:hover {
+.tabbrowser-tab:hover > * > * > .tab-close-button:hover {
   -moz-image-region: rect(0px, 32px, 16px, 16px);
 }
 
-.tabbrowser-tab:hover > .tab-close-button:hover:active {
+.tabbrowser-tab:hover > * > * > .tab-close-button:hover:active {
   -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 
