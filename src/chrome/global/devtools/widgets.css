@@ -200,11 +200,13 @@
   -moz-appearance: none;
   min-height: 24px;
   min-width: 65px;
-  margin: 0;
+  margin: 0 -5px 0 0;
   padding: 0 8px 0 20px;
   border: none;
+  border-radius: 0;
   outline: none;
   color: hsl(210,30%,85%);
+  box-shadow: none;
 }
 
 .breadcrumbs-widget-item > .button-box {
