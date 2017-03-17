@@ -28,18 +28,12 @@
 }
 
 #downloadsFooter {
-  background: #e5e5e5;
-  border-top: 1px solid hsla(0,0%,0%,.1);
-  box-shadow: 0 -1px hsla(0,0%,100%,.5) inset, 0 1px 1px hsla(0,0%,0%,.03) inset;
-}
-
-#downloadsFooter {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
 #downloadsHistory {
-  margin: 10px 10px 3px !important;
+  margin: 10px 10px 10px !important;
   border: 1px solid #a2a6ad !important;
   background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9 !important;
 }
