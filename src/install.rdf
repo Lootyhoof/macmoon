@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>macmoon@lootyhoof-pm</em:id>
-    <em:version>1.5.0</em:version>
+    <em:version>2.0.0</em:version>
     <em:name>MacMoon</em:name>
     <em:description>The default Firefox 2 theme for Mac, now for Pale Moon!</em:description>
     <em:creator>Lootyhoof</em:creator>
