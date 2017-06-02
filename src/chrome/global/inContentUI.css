@@ -2,12 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-
-
-
-
-
-
 /*
  * The default namespace for this file is XUL. Be sure to prefix rules that
  * are applicable to both XUL and HTML with '*|'.
@@ -23,6 +17,13 @@
                     url("chrome://global/skin/inContentUI/background-texture.png"),
                     /* Gradient */
                     linear-gradient(#ADB5C2, #BFC6D1);
+}
+
+/* Use the new in-content colors for #contentAreaDownloadsView. After landing
+   of bug 989469 the colors can be moved to *|*:root */
+*|*#contentAreaDownloadsView {
+  background: #f1f1f1;
+  color: #424e5a;
 }
 
 html|html {
@@ -43,9 +44,9 @@ html|html {
 menulist,
 colorpicker[type="button"] {
   -moz-appearance: none;
-  padding: 1px 2px;
+  padding: 1px 4px;
   min-width: 60px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 1px solid rgba(60,73,97,0.5);
   box-shadow: inset 0 1px rgba(255,255,255,0.25), 0 1px rgba(255,255,255,0.25);
   background-color: transparent;
@@ -55,14 +56,9 @@ colorpicker[type="button"] {
   text-shadow: 0 1px rgba(255, 255, 255, .4);
 }
 
-*|button > .button-box {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-button:focus > .button-box,
-menulist:focus:not([open="true"]) > .menulist-label-box,
-colorpicker[type="button"]:focus:not([open="true"]) > .colorpicker-button-colorbox {
+button:-moz-focusring > .button-box,
+menulist:-moz-focusring:not([open="true"]) > .menulist-label-box,
+colorpicker[type="button"]:-moz-focusring:not([open="true"]) > .colorpicker-button-colorbox {
   outline: 1px dotted #252F3B;
 }
 
@@ -91,6 +87,7 @@ menulist {
 
 /* Tweak margins so the focus ring is in the right place. */
 menulist > .menulist-label-box {
+  background-image: none;
   -moz-margin-end: 3px;
   margin-top: 1px;
 }
@@ -102,6 +99,7 @@ menulist > .menulist-label-box > .menulist-label {
 
 menulist > .menulist-dropmarker {
   -moz-appearance: none;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-sharp.gif");
   display: -moz-box;
   background: transparent;
   border: none;
