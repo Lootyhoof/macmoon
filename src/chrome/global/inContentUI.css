@@ -99,7 +99,7 @@ menulist > .menulist-label-box > .menulist-label {
 
 menulist > .menulist-dropmarker {
   -moz-appearance: none;
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-sharp.gif");
+  list-style-image: url("chrome://global/skin/menulist/menulist-arrow.gif");
   display: -moz-box;
   background: transparent;
   border: none;
