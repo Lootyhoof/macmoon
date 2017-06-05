@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.1.0
+- sync about:support styling with default
+- sync about:permissions styling with default
+- add image document favicon when viewing standalone images
+- fix "learn more" links in notification popups
+- add urlbar plugin notification icon
+- fix in-content styling
+
 ### 2.0.0
 - refactor tabs to modern standards
 - render background stylings in CSS rather than PNGs
