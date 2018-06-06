@@ -21,7 +21,8 @@ textbox[nomatch="true"][highlightnonmatches="true"] {
   color: red;
 }
 
-.autocomplete-textbox-container {
+.autocomplete-textbox-container,
+.private-autocomplete-textbox-container {
   -moz-box-align: center;
 }
 
@@ -37,7 +38,10 @@ textbox:not(.padded) .textbox-input-box {
 
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+panel[type="private-autocomplete"],
+panel[type="private-autocomplete-richlistbox"],
+.private-autocomplete-history-popup {
   -moz-appearance: none;
   padding: 0;
   border: 1px solid #a3a3a3;
@@ -46,19 +50,22 @@ panel[type="autocomplete-richlistbox"],
   background-size: 4px 4px;
 }
 
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+.private-autocomplete-history-popup {
   max-height: 180px;
 }
 
 /* ::::: tree ::::: */
 
-.autocomplete-tree {
+.autocomplete-tree,
+.private-autocomplete-tree {
   -moz-appearance: none !important;
   border: none !important;
   background-color: transparent !important;
 }
 
-.autocomplete-treecol {
+.autocomplete-treecol,
+.private-autocomplete-treecol {
   -moz-appearance: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -66,51 +73,61 @@ panel[type="autocomplete-richlistbox"],
 }
 
 /* GTK calculates space for a sort arrow */
-.autocomplete-treecol > .treecol-sortdirection {
+.autocomplete-treecol > .treecol-sortdirection,
+.private-autocomplete-treecol > .treecol-sortdirection {
   -moz-appearance: none !important;
 }
 
-.autocomplete-treebody::-moz-tree-cell-text {
+.autocomplete-treebody::-moz-tree-cell-text,
+.private-autocomplete-treebody::-moz-tree-cell-text {
   -moz-padding-start: 8px;
 }
 
-treechildren.autocomplete-treebody::-moz-tree-row(even) {
+treechildren.autocomplete-treebody::-moz-tree-row(even),
+treechildren.private-autocomplete-treebody::-moz-tree-row(even) {
   background-color: transparent;
 }
 
-treechildren.autocomplete-treebody::-moz-tree-row(selected) {
+treechildren.autocomplete-treebody::-moz-tree-row(selected),
+treechildren.private-autocomplete-treebody::-moz-tree-row(selected) {
   background-color: #4b80d5;
   color: #fff;
 }
 
-treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
+treechildren.autocomplete-treebody::-moz-tree-cell-text(selected),
+treechildren.private-autocomplete-treebody::-moz-tree-cell-text(selected) {
   color: #fff !important;
 }
 
-.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue),
+.private-autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
   max-width: 16px;
   height: 16px;
 }
 
 /* ::::: richlistbox autocomplete ::::: */
 
-.autocomplete-richlistbox {
+.autocomplete-richlistbox,
+.private-autocomplete-richlistbox {
   margin: 0;
   background-color: rgb(240, 240, 240);
   background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
   background-size: 4px 4px;
 }
 
-.autocomplete-richlistitem[selected="true"] {
+.autocomplete-richlistitem[selected="true"],
+.private-autocomplete-richlistitem[selected="true"] {
   background: #4B80D5 url("chrome://global/skin/menu/menu_item_active_bkg.png");
   color: #fff;
 }
 
-.autocomplete-richlistitem {
+.autocomplete-richlistitem,
+.private-autocomplete-richlistitem {
   padding: 1px 2px;
 }
 
-.autocomplete-richlistitem:not(:first-child)/*:not([selected])*/ {
+.autocomplete-richlistitem:not(:first-child),
+.private-autocomplete-richlistitem:not(:first-child) {
   border-top: 1px solid #e0e0e0;
 }
 
