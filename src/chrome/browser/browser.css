@@ -1721,7 +1721,7 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
   background: url("chrome://browser/skin/subtle-pattern.png") #B3B9C1;
 }
 
-/* ----- SIDEBAR ELEMENTS ----- */
+/* ----- Content area ----- */
 
 #sidebar,
 sidebarheader {
@@ -1762,6 +1762,15 @@ sidebarheader {
 
 sidebarheader > .tabs-closebutton > .toolbarbutton-text {
   display: none;
+}
+
+.browserContainer > findbar {
+  border-top: 1px solid #a3a3a3;
+  background-color: rgb(240, 240, 240);
+  background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
+  background-size: 4px 4px;
+  color: #000;
+  text-shadow: none;
 }
 
 /* ----- THROBBER ----- */
