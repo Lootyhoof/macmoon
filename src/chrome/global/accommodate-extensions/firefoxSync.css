@@ -15,7 +15,7 @@
 }*/
 
 wizard[windowtype="Weave:AccountSetup"] .wizard-header-icon {
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
   max-width: 32px;
   max-height: 32px;
 }

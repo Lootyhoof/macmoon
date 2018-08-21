@@ -88,7 +88,7 @@ textbox[type=search] {
   border-radius: 9.5pt;
   border: 1px solid #909090;
   padding : 2px 4px;
-  -moz-padding-start: 9px;
+  padding-inline-start: 9px;
 }
 
 textbox[type=search][focused="true"]  {

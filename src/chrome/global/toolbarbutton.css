@@ -21,7 +21,7 @@ toolbarbutton {
 }
 
 .toolbarbutton-icon[label]:not([label=""]) {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .toolbarbutton-text {
@@ -78,7 +78,7 @@ toolbarbutton[disabled="true"]:-moz-lwtheme {
 
 .toolbarbutton-menu-dropmarker {
   margin: 0 !important;
-  -moz-padding-start: 3px;
+  padding-inline-start: 3px;
   border: none;
   background-color: transparent;
   list-style-image: url("chrome://global/skin/arrow/dropmarker.png");

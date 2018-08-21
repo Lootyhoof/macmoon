@@ -18,8 +18,8 @@
 #Console2Window #TextboxFilter {
   margin-top: 3px !important;
   margin-bottom: 3px !important;
-  -moz-margin-end: 4px !important;
-  -moz-padding-start: 6px;
+  margin-inline-end: 4px !important;
+  padding-inline-start: 6px;
   border-radius: 9.5pt;
 }
 
@@ -32,7 +32,7 @@
 }
 
 #Console2Window #ButtonEval {
-  -moz-margin-end: 1px !important;
+  margin-inline-end: 1px !important;
 }
 
 #Console2Window #ConsoleBox {

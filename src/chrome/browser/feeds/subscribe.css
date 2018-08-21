@@ -21,7 +21,7 @@ html {
   margin: 2em auto;
   padding: 3em;
   border: 1px solid ThreeDShadow;
-  -moz-padding-start: 30px;
+  padding-inline-start: 30px;
   box-shadow:
     0 0 1px rgba(0, 0, 0, .2),
     0 2px 2px rgba(0, 0, 0, .2);
@@ -41,9 +41,9 @@ html {
 #feedHeader {  
   margin-top: 4.9em;
   margin-bottom: 1em;
-  -moz-margin-start: 1.4em;
-  -moz-margin-end: 1em;
-  -moz-padding-start: 2.9em;
+  margin-inline-start: 1.4em;
+  margin-inline-end: 1em;
+  padding-inline-start: 2.9em;
   font-size: 110%;
   color: InfoText;
 }
@@ -70,12 +70,12 @@ html {
 
 #feedHeader[firstrun="true"] #feedIntroText {
   padding-top: 0.1em;
-  -moz-padding-start: 0.6em;
+  padding-inline-start: 0.6em;
   display: block;
 }
 
 #feedHeader[firstrun="true"] > #feedSubscribeLine {
-  -moz-padding-start: 1.8em;
+  padding-inline-start: 1.8em;
 }
 
 #feedSubscribeLine {
@@ -87,17 +87,17 @@ html {
 }
 
 #handlersMenuList > menupopup > menuitem {
-  -moz-padding-start: 23px;
+  padding-inline-start: 23px;
 }
 
 #handlersMenuList > menupopup > menuitem.menuitem-iconic {
-  -moz-padding-start: 6px; /* menulist{padding-left:8px} - menupopup{border:1px} - menuitem{border:1px} = 6px */
+  padding-inline-start: 6px; /* menulist{padding-left:8px} - menupopup{border:1px} - menuitem{border:1px} = 6px */
 }
 
 #handlersMenuList > menupopup > .menuitem-iconic  > .menu-iconic-left {
   display: -moz-box;
   min-width: 16px;
-  -moz-padding-end: 2px;
+  padding-inline-end: 2px;
 }
 
 #chooseApplicationMenuItem {
@@ -139,8 +139,8 @@ h2 {
 
 #feedTitleLink {
   float: right;
-  -moz-margin-start: .6em;
-  -moz-margin-end: 0;
+  margin-inline-start: .6em;
+  margin-inline-end: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -150,15 +150,15 @@ a[href] img {
 }
 
 #feedTitleContainer {
-  -moz-margin-start: 0;
-  -moz-margin-end: .6em;
+  margin-inline-start: 0;
+  margin-inline-end: .6em;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 #feedTitleImage {
-  -moz-margin-start: .6em;
-  -moz-margin-end: 0;
+  margin-inline-start: .6em;
+  margin-inline-end: 0;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 300px;

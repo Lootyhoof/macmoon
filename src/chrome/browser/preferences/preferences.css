@@ -241,8 +241,8 @@ radio[pane=paneSync] {
 /*  margin: 0px 3px 6px 3px !important;*/ /* original */
   margin-top: 7px;
   margin-bottom: 9px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: -13px;
+  margin-inline-start: 6px;
+  margin-inline-end: -13px;
 }
 
 /* :::::::::: Cookies Manager :::::::::: */
@@ -273,11 +273,11 @@ radio[pane=paneSync] {
  * Update Preferences
  */
 #autoInstallOptions {
-  -moz-margin-start: 20px;
+  margin-inline-start: 20px;
 }
 
 .updateControls {
-  -moz-margin-start: 10px;
+  margin-inline-start: 10px;
 }
 
 /**

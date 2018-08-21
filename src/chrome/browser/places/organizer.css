@@ -66,14 +66,14 @@
 /* ..... Menu ..... */
 
 #placesMenu {
-  -moz-margin-start: 2px;
+  margin-inline-start: 2px;
   border: none;
 }
 
 #placesMenu > menu {
   padding-top: 6px;
   padding-bottom: 5px;
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   border-top: none;
   border-bottom: none;
   border-right: 1px solid transparent;
@@ -96,9 +96,9 @@
 }
 
 #placesMenu > menu > label {
-  -moz-margin-start: 2px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
-  -moz-margin-end: 4px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
-  -moz-padding-end: 8px; /* これによって、dropmarker が label と重ならずに表示される。*/
+  margin-inline-start: 2px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
+  margin-inline-end: 4px !important; /* global/menu.css/.menuba-text の値を上書きのため、!important */
+  padding-inline-end: 8px; /* これによって、dropmarker が label と重ならずに表示される。*/
   background: url("chrome://global/skin/arrow/dropmarker.png") no-repeat right center;
 }
 
@@ -157,7 +157,7 @@
 }
 
 #infoBoxExpanderLabel {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
 }
 
 /**
@@ -169,15 +169,15 @@
 }
 
 #clearDownloadsButton {
-  -moz-padding-start: 9px;
-  -moz-padding-end: 9px;
+  padding-inline-start: 9px;
+  padding-inline-end: 9px;
 }
 
 /* .....Scopebar ..... */
 
 #organizerScopeBar {
   padding: 2px 0;
-  -moz-padding-end: 3px;
+  padding-inline-end: 3px;
 }
 
 #organizerScopeBar > toolbarbutton {

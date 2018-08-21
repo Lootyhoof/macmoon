@@ -40,7 +40,7 @@
 }
 
 #app-picker-item-image {
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 #app-picker-item-cell {

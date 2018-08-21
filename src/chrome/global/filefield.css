@@ -63,8 +63,8 @@ filefield {
   height: 16px;
   margin-top: 1px;
   margin-bottom: 2px;
-  -moz-margin-start: 3px;
-  -moz-margin-end: 0;
+  margin-inline-start: 3px;
+  margin-inline-end: 0;
 }
 
 .fileFieldLabel {

@@ -57,7 +57,7 @@
 .console-row-icon {
   -moz-box-align: start !important;
   padding: 4px;
-  -moz-padding-start: 5px;
+  padding-inline-start: 5px;
 }
 
 .console-row-msg > label,
@@ -78,8 +78,8 @@
 .console-row-code {
   padding-top: 3px;
   padding-bottom: 3px;
-  -moz-padding-start: 3px;
-  -moz-padding-end: 0;
+  padding-inline-start: 3px;
+  padding-inline-end: 0;
   color: #0000bb;
   font-size: larger;
 }
@@ -150,11 +150,11 @@ toolbar#ToolbarMode toolbarbutton:hover:not([checked="true"]) {
 }
 
 toolbar#ToolbarMode .toolbarbutton-icon {
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
 }
 
 toolbar#ToolbarMode .toolbarbutton-text {
-  -moz-padding-end: 4px;
+  padding-inline-end: 4px;
 }
 
 #Console\:modeAll {

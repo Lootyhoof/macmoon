@@ -92,8 +92,8 @@
 #editBMPanel_namePicker[droppable="false"] {
 /*  -moz-appearance: textfield;*/ /* Normal editable menulists set this to "menulist". */
   margin: 2px 4px;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 4px;
+  padding-inline-start: 4px;
+  padding-inline-end: 4px;
   box-shadow:
     inset 0 1px 1px rgba(0, 0, 0, 0.68),
     inset 2px 0 rgba(0, 0, 0, 0.08),
@@ -164,7 +164,7 @@
 
 .expander-up,
 .expander-down {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
   padding: 0;
   width: 23px;
   min-width: 0;
@@ -203,8 +203,8 @@
 
 popupset > #editBookmarkPanel #editBMPanel_namePicker[droppable="false"],
 popupset > #editBookmarkPanel textbox {
-  -moz-padding-start: 2px;
-  -moz-padding-end: 2px;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
   border-top: 2px solid;
   -moz-border-top-colors: #7d7d7d #d4d4d4;
   border-right: 2px solid;

@@ -166,12 +166,12 @@ treechildren::-moz-tree-cell-text(date, session-continue) {
 /* :::::::::: Browser Sidebars :::::::::: */
 
 #bookmarksPanel #search-box {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #history-panel #search-box {
-  -moz-margin-start: 0;
-  -moz-margin-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 #viewButton {
@@ -183,7 +183,7 @@ treechildren::-moz-tree-cell-text(date, session-continue) {
 }
 
 /*#viewButton > hbox > dropmarker {
-  -moz-margin-end: -3px;
+  margin-inline-end: -3px;
   height: auto;
   width: auto;
 }*/

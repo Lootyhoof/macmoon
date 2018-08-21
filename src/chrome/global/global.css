@@ -141,7 +141,7 @@ statusbarpanel:not(.statusbar-resizerpanel):-moz-lwtheme {
   -moz-appearance: none;
   border-top-style: none;
   border-bottom-style: none;
-  -moz-border-start-style: none;
+  border-inline-start-style: none;
 }
 
 .statusbar-resizerpanel {
@@ -182,7 +182,7 @@ sidebarheader {
 }
 
 sidebarheader > label {
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   color: #000;
 }
 
@@ -305,7 +305,7 @@ label[disabled="true"] {
 }
 
 .indent {
-  -moz-margin-start: 23px;
+  margin-inline-start: 23px;
 }
 
 .box-padded {

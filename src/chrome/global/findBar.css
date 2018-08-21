@@ -26,7 +26,7 @@ findbar:-moz-lwtheme {
 /* ::::: findbar close button ::::: */
 
 .findbar-closebutton {
-  -moz-margin-start: 4px;
+  margin-inline-start: 4px;
   padding-top: 0;
   padding-bottom: 0;
   border: none !important;
@@ -39,7 +39,7 @@ findbar:-moz-lwtheme {
   -moz-binding: url("chrome://global/content/bindings/findbar.xml#findbar-textbox");
   padding-top: 0;
   padding-bottom: 0;
-  -moz-padding-start: 20px;
+  padding-inline-start: 20px;
   border-radius: 9.5pt;
   background: #fff url("chrome://global/skin/icons/findbar-textbox-bkg.png") no-repeat left center;
   min-height: 20px;
@@ -64,7 +64,7 @@ findbar toolbarbutton.tabbable {
 }
 
 findbar toolbarbutton.tabbable > .toolbarbutton-icon {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 findbar toolbarbutton.tabbable:hover:not([disabled]) {
@@ -171,8 +171,8 @@ findbar checkbox > .checkbox-label-box > .checkbox-icon {
 /* ::::: status ::::: */
 
 .find-status-icon {
-  -moz-margin-start: 12px;
-  -moz-margin-end: 2px;
+  margin-inline-start: 12px;
+  margin-inline-end: 2px;
   list-style-image: none;
   width: 16px;
   height: 16px;

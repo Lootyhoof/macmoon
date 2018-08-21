@@ -12,7 +12,7 @@
 
 #topBar {
   margin: 0;
-  -moz-padding-start: 10px;
+  padding-inline-start: 10px;
   border-bottom: 1px solid #a3a3a3;
   background-color: rgb(247, 247, 247);
   background-image: linear-gradient(transparent 50%, rgb(244, 244, 244) 50%);
@@ -115,7 +115,7 @@ textbox {
 }
 
 textbox.header {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 .fixedsize {
@@ -137,8 +137,8 @@ textbox[disabled] {
 }
 
 groupbox.collapsable caption .caption-icon { 
-  -moz-margin-start: 2px;
-  -moz-margin-end: 2px;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
   background: transparent url("chrome://global/skin/tree/twisty-open.png") no-repeat center;
   width: 11px;
   height: 11px;
@@ -159,7 +159,7 @@ groupbox #metatree {
 }
 
 #securityBox description { 
-  -moz-margin-start: 10px;
+  margin-inline-start: 10px;
 }
 
 #general-security-identity {
@@ -218,8 +218,8 @@ treechildren::-moz-tree-cell-text(broken) {
 #feedListbox richlistitem {
   padding-top: 6px;
   padding-bottom: 6px;
-  -moz-padding-start: 7px;
-  -moz-padding-end: 7px;
+  padding-inline-start: 7px;
+  padding-inline-end: 7px;
   border-bottom: 1px dotted #c0c0c0;
   min-height: 25px;
 }
@@ -249,8 +249,8 @@ treechildren::-moz-tree-cell-text(broken) {
 #permList > vbox {
   padding-top: 6px;
   padding-bottom: 6px;
-  -moz-padding-start: 7px;
-  -moz-padding-end: 7px;
+  padding-inline-start: 7px;
+  padding-inline-end: 7px;
   min-height: 25px;
   border-bottom: 1px dotted #c0c0c0;
 }

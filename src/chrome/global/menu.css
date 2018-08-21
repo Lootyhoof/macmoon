@@ -94,8 +94,8 @@ menuitem[src] > .menu-iconic-left > .menu-iconic-icon {
 
 .menu-right,
 .menu-accel-container {
-  -moz-margin-end: 6px;
-  -moz-margin-start: 15px;
+  margin-inline-end: 6px;
+  margin-inline-start: 15px;
   -moz-box-pack: end;
 }
 
@@ -224,7 +224,7 @@ menulist:not([editable="true"]) > menupopup > menuitem[selected="true"]::before 
   content: '\2713'; /* a checkmark */
   display: block;
   width: 15px;
-  -moz-margin-start: -15px;
+  margin-inline-start: -15px;
 }
 
 /* ::::: menuseparator ::::: */

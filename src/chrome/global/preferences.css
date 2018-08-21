@@ -28,8 +28,8 @@ prefwindow[type="child"] > prefpane {
 
 .prefWindow-dlgbuttons {
   padding-bottom: 10px;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 8px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
 }
 
 prefwindow[type="child"] .prefWindow-dlgbuttons {
@@ -40,7 +40,7 @@ prefwindow[type="child"] .prefWindow-dlgbuttons {
 
 .paneSelector {
   margin: 0;
-  -moz-padding-start: 10px;
+  padding-inline-start: 10px;
   border-bottom: 1px solid #a3a3a3;
   background-color: rgb(247, 247, 247);
   background-image: linear-gradient(transparent 50%, rgb(244, 244, 244) 50%);

@@ -213,7 +213,7 @@ treechildren::-moz-tree-drop-feedback {
   background-color: #3d80df;
   width: 50px;
   height: 2px;
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 /* ::::: tree progress meter ::::: */
@@ -260,8 +260,8 @@ treecol[ordinal="1"] {
 }
 
 .treecol-image { /* すぐ上の treecolpicker のこと */
-  -moz-padding-start: 2px;
-  -moz-padding-end: 1px;
+  padding-inline-start: 2px;
+  padding-inline-end: 1px;
 }
 
 .treecol-text {
@@ -350,8 +350,8 @@ treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descend
 
 treechildren::-moz-tree-twisty {
   padding-top: 1px;
-  -moz-padding-start: 2px;
-  -moz-padding-end: 3px;
+  padding-inline-start: 2px;
+  padding-inline-end: 3px;
   list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
   width: 11px; /* The image's width is 11 pixels */
 }
@@ -391,7 +391,7 @@ treechildren::-moz-tree-cell-text(selected, editing) {
 .tree-input {
   -moz-appearance: none;
   margin: 0;
-  -moz-margin-start: -4px;
+  margin-inline-start: -4px;
   padding: 1px;
 /*  border: 1px solid Highlight;
   -moz-border-top-colors: Highlight;

@@ -52,24 +52,24 @@ richlistitem {
 
 .typeIcon,
 .actionIcon {
-  -moz-margin-start: 14px;
-  -moz-margin-end: 3px;
+  margin-inline-start: 14px;
+  margin-inline-end: 3px;
 }
 
 richlistitem label {
-  -moz-margin-start: 1px !important; /* "global/menulist.css > .menulist-label" の値を上書きするため、"!important" */
+  margin-inline-start: 1px !important; /* "global/menulist.css > .menulist-label" の値を上書きするため、"!important" */
   padding-left: 0;
 }
 
 .actionsMenu {
   margin-top: 0;
   margin-bottom: 0;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 0;
+  margin-inline-start: 6px;
+  margin-inline-end: 0;
 }
 
 .actionsMenu .menulist-icon {
-  -moz-margin-end: 3px;
+  margin-inline-end: 3px;
 }
 
 richlistitem[appHandlerIcon="ask"],
@@ -94,10 +94,10 @@ menuitem[appHandlerIcon="plugin"] {
 }
 
 .actionsMenu > menupopup > menuitem > .menu-iconic-left {
-  -moz-padding-start: 0px;
-  -moz-padding-end: 3px;
+  padding-inline-start: 0px;
+  padding-inline-end: 3px;
 }
 
 .actionsMenu > menupopup > menuitem {
-  -moz-padding-start: 6px;
+  padding-inline-start: 6px;
 }

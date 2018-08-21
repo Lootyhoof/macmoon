@@ -80,8 +80,8 @@ dialogheader {
   -moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
   padding-top: 12px;
   padding-bottom: 12px;
-  -moz-padding-start: 25px;
-  -moz-padding-end: 5px;
+  padding-inline-start: 25px;
+  padding-inline-end: 5px;
   background: #4b80d5 url("chrome://global/skin/basic/blue-header.png") center;
   color: #fff;
 }
@@ -92,5 +92,5 @@ dialogheader {
 }
 
 .header-large > .dialogheader-description {
-  -moz-margin-start: 12px !important;
+  margin-inline-start: 12px !important;
 }
