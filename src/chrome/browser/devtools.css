@@ -60,6 +60,7 @@
 .devtools-responsiveui-menulist .menulist-editable-box {
   -moz-appearance: none;
   background-color: transparent;
+  background-image: none;
 }
 
 .devtools-responsiveui-menulist > .menulist-editable-box > .menulist-editable-input {
@@ -125,6 +126,7 @@
   -moz-appearance: none;
   display: -moz-box;
   background-color: transparent;
+  background-image: none;
   list-style-image: url("chrome://devtools/skin/images/dropmarker.svg");
   -moz-box-align: center;
   border-width: 0;
