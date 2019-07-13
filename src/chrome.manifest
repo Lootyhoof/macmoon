@@ -2,5 +2,7 @@ skin	global			macmoon	chrome/global/
 skin	browser			macmoon	chrome/browser/
 skin	mozapps			macmoon	chrome/mozapps/
 skin	os			    macmoon chrome/os/darwin/ os=Darwin
+skin	os			    macmoon chrome/os/linux/ os=Linux
+skin	os			    macmoon chrome/os/winnt/ os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
