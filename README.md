@@ -1,5 +1,5 @@
 # MacMoon
-![Preview](http://i66.tinypic.com/28mhjt4.png)
+![Preview](https://i.imgur.com/ob6xYRn.png)
 
 Continuation of the Firefox 2 Mac default theme for Pale Moon, loosely based upon the theme "macfox NOSTALGIA".
 
