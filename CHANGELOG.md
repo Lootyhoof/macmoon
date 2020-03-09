@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.6.2
+- Pale Moon 29: clarify the status of Firefox extensions in the Add-ons Manager
+- cleanup some about:addons styling
+
 ### 2.6.1
 - small version bump for Pale Moon 29.0 compatibility (no code changes)
 
