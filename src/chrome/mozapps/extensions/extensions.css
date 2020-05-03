@@ -194,7 +194,6 @@
 
 .category[selected] {
   background-color: rgba(255, 255, 255, 0.35);
-  color: -moz-dialogtext;
   font-weight: bold;
   border-color: rgba(50, 65, 92, 0.4);
   border-inline-end-color: #C9CFD7;

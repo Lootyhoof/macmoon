@@ -12,19 +12,21 @@
  */
 
 html {
-  background: -moz-Dialog;
+  background: rgb(240, 240, 240);
+  background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
+  background-size: 4px 4px;
 }
 
 body {
   margin: 0;
   padding: 0 1em;
-  color: -moz-FieldText;
+  color: #000;
   font: message-box;
 }
 
 h1 {
   margin: 0 0 .6em 0;
-  border-bottom: 1px solid ThreeDLightShadow;
+  border-bottom: 1px solid #a0a0a0;
   font-size: 160%;
 }
 
@@ -47,11 +49,14 @@ ul {
   min-width: 13em;
   max-width: 52em;
   margin: 4em auto;
-  border: 1px solid ThreeDShadow;
   border-radius: 10px;
   padding: 3em;
   padding-inline-start: 30px;
-  background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat -moz-Field;
+  background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat;
+  box-shadow:
+    inset 0 0 1px rgba(0, 0, 0, .2),
+    inset 0 1px 2px rgba(0, 0, 0, .35);
+  background-color: rgba(0, 0, 0, .02);
   background-origin: content-box;
 }
 
@@ -73,7 +78,7 @@ ul {
 
 #errorShortDesc > p {
   overflow: auto;
-  border-bottom: 1px solid ThreeDLightShadow;
+  border-bottom: 1px solid #a0a0a0;
   padding-bottom: 1em;
   font-size: 130%;
   white-space: pre-wrap;
@@ -82,9 +87,6 @@ ul {
 #errorLongDesc {
   padding-inline-end: 3em;
   font-size: 110%;
-}
-
-#errorLongDesc > p {
 }
 
 #errorTryAgain {

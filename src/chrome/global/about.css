@@ -3,22 +3,27 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 html {
-  background: -moz-Dialog;
+  background: rgb(240, 240, 240);
+  background-image: linear-gradient(transparent 50%, rgb(236, 236, 236) 50%);
+  background-size: 4px 4px;
   padding: 0 1em;
   font: message-box;
 }
 
 body {
-  color: -moz-FieldText;
+  color: #000;
   position: relative;
   min-width: 330px;
   max-width: 50em;
   margin: 4em auto;
-  border: 1px solid ThreeDShadow;
+  border: 1px solid #a0a0a0;
   border-radius: 10px;
   padding: 3em;
   padding-inline-start: 30px;
-  background: -moz-Field;
+  box-shadow:
+    inset 0 0 1px rgba(0, 0, 0, .2),
+    inset 0 1px 2px rgba(0, 0, 0, .35);
+  background-color: rgba(0, 0, 0, .02);
 }
 
 .aboutPageWideContainer {
@@ -55,6 +60,6 @@ th, td {
 }
 
 .columns {
-  -moz-column-width: 20em;
-  -moz-column-gap: 3em;
+  column-width: 20em;
+  column-gap: 3em;
 }

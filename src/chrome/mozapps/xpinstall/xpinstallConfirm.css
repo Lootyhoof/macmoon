@@ -13,7 +13,8 @@
 }
 
 #itemList {
-  -moz-appearance: listbox;
+  background-color: #fff;
+  border: 1px solid #909090;
   margin: 3px 4px 10px 4px;
   height: 14em;
 }
@@ -56,7 +57,6 @@ installitem {
 .xpinstallItemURL {
   -moz-appearance: none;
   border: none;
-  background-color: Window;
   margin-top: 2px;
   margin-bottom: 1px;
   margin-inline-start: 6px;
